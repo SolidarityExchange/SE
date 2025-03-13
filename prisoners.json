@@ -1,0 +1,402 @@
+[
+  {
+    "id": "01",
+    "name": "John Doe",
+    "bio": "Journalist imprisoned for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "IN"
+  },
+  {
+    "id": "02",
+    "name": "Jane Smith",
+    "bio": "Activist jailed for protests.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "TX"
+  },
+  {
+    "id": "03",
+    "name": "Alex Brown",
+    "bio": "Whistleblower detained for leaking classified documents.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MN"
+  },
+  {
+    "id": "04",
+    "name": "Maria Lopez",
+    "bio": "Detained for political activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "CO"
+  },
+  {
+    "id": "05",
+    "name": "David Kim",
+    "bio": "Journalist arrested for reporting on government abuses.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "WI"
+  },
+  {
+    "id": "06",
+    "name": "Sophia Audrey",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "GA"
+  },
+  {
+    "id": "07",
+    "name": "Emma Lily",
+    "bio": "Detained for leading protests.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MN"
+  },
+  {
+    "id": "08",
+    "name": "Jonathan Audrey",
+    "bio": "Imprisoned for speaking against injustice.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "CA"
+  },
+  {
+    "id": "09",
+    "name": "Hannah Christopher",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "WA"
+  },
+  {
+    "id": "10",
+    "name": "Aaron David",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "TX"
+  },
+  {
+    "id": "11",
+    "name": "William Thomas",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MI"
+  },
+  {
+    "id": "12",
+    "name": "Charlotte Mia",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MA"
+  },
+  {
+    "id": "13",
+    "name": "Charlotte Harper",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MI"
+  },
+  {
+    "id": "14",
+    "name": "Lily Joshua",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "PA"
+  },
+  {
+    "id": "15",
+    "name": "Nathan Grace",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "FL"
+  },
+  {
+    "id": "16",
+    "name": "Robert Michael",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MD"
+  },
+  {
+    "id": "17",
+    "name": "Ethan Michael",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "OH"
+  },
+  {
+    "id": "18",
+    "name": "Anthony Ella",
+    "bio": "Detained for leading protests.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MI"
+  },
+  {
+    "id": "19",
+    "name": "Abigail Daniel",
+    "bio": "Arrested for human rights activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "WA"
+  },
+  {
+    "id": "20",
+    "name": "Alex Joshua",
+    "bio": "Detained for political dissent.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "PA"
+  },
+  {
+    "id": "21",
+    "name": "Benjamin Nathan",
+    "bio": "Arrested for human rights activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "FL"
+  },
+  {
+    "id": "22",
+    "name": "Amelia Lily",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MI"
+  },
+  {
+    "id": "23",
+    "name": "Stella Gabriel",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "CO"
+  },
+  {
+    "id": "24",
+    "name": "Ryan Olivia",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "AZ"
+  },
+  {
+    "id": "25",
+    "name": "Nicholas Gabriel",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "GA"
+  },
+  {
+    "id": "26",
+    "name": "Victoria Joshua",
+    "bio": "Detained for political dissent.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "GA"
+  },
+  {
+    "id": "27",
+    "name": "Aaron Jonathan",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "IN"
+  },
+  {
+    "id": "28",
+    "name": "Andrew Jane",
+    "bio": "Charged for reporting war crimes.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "IL"
+  },
+  {
+    "id": "29",
+    "name": "Leah Zoe",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "WA"
+  },
+  {
+    "id": "30",
+    "name": "Lily Mia",
+    "bio": "Charged for reporting war crimes.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MN"
+  },
+  {
+    "id": "31",
+    "name": "Hannah Nathan",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MD"
+  },
+  {
+    "id": "32",
+    "name": "Matthew Zoe",
+    "bio": "Imprisoned for speaking against injustice.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "AZ"
+  },
+  {
+    "id": "33",
+    "name": "Scarlett Maya",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MN"
+  },
+  {
+    "id": "34",
+    "name": "Stella John",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MA"
+  },
+  {
+    "id": "35",
+    "name": "Gabriel Aaron",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MO"
+  },
+  {
+    "id": "36",
+    "name": "Nicholas Amelia",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "FL"
+  },
+  {
+    "id": "37",
+    "name": "Amelia Harper",
+    "bio": "Arrested for defending free speech.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MA"
+  },
+  {
+    "id": "38",
+    "name": "Charlotte Evelyn",
+    "bio": "Charged for reporting war crimes.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "GA"
+  },
+  {
+    "id": "39",
+    "name": "Natalie Maya",
+    "bio": "Detained for political dissent.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "IN"
+  },
+  {
+    "id": "40",
+    "name": "Natalie Olivia",
+    "bio": "Imprisoned for speaking against injustice.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "PA"
+  },
+  {
+    "id": "41",
+    "name": "Nathan Aaron",
+    "bio": "Arrested for human rights activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "WA"
+  },
+  {
+    "id": "42",
+    "name": "Jane Natalie",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MO"
+  },
+  {
+    "id": "43",
+    "name": "Alex John",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "IL"
+  },
+  {
+    "id": "44",
+    "name": "Scarlett Lucy",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "CO"
+  },
+  {
+    "id": "45",
+    "name": "Alex Leah",
+    "bio": "Arrested for human rights activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MD"
+  },
+  {
+    "id": "46",
+    "name": "Ella Daniel",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "WI"
+  },
+  {
+    "id": "47",
+    "name": "Sophia Sophia",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "PA"
+  },
+  {
+    "id": "48",
+    "name": "Jonathan Stella",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "OH"
+  },
+  {
+    "id": "49",
+    "name": "Lily Robert",
+    "bio": "Arrested for defending free speech.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "CA"
+  },
+  {
+    "id": "50",
+    "name": "Lily Joshua",
+    "bio": "Detained for leading protests.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "WI"
+  }
+]

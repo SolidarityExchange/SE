@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <title>Grid Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'EB Garamond', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-top: 120px; /* Adjusted for fixed topbar */
+        }
+
+        .topbar-container {
+            width: 100%;
+            background: #222;
+            color: white;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+            z-index: 1000;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+            filter: grayscale(100%) contrast(200%);
+        }
+
+        .content {
+            width: 80%;
+            max-width: 900px;
+            margin-top: 20px;
+        }
+
+        /* Featured Prisoners Section */
+
+        /* Grid Navigation */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Always 4 columns per row */
+            gap: 10px;
+            width: 100%;
+    	    margin-bottom: 50px; /* Extra margin to allow scrolling */
+        }
+
+.grid-item {
+    position: relative;
+    height: 150px;
+    background-size: cover; /* Ensures the image covers the entire item */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-item::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .grid-item a {
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.3); /* Reduced opacity */
+            border-radius: 5px;
+        }
+
+        /* Assign background images */
+.grid-item:nth-child(1) { background-image: url('prisonerregistry.jpg'); }
+.grid-item:nth-child(2) { background-image: url('prisonersupport.bmp'); }
+.grid-item:nth-child(3) { background-image: url('dispatchtransparent.jpg'); }
+.grid-item:nth-child(4) { background-image: url('wide-logo-charcoal.jpg'); }
+        
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr); /* 1 item per row on very small screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="topbar-container">
+        <div class="logo">
+            <img src="wide-logo-charcoal.jpg" alt="Logo">
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Featured Prisoners Section -->
+<br />
+<br />
+<br />
+        <!-- Grid Navigation -->
+        <div class="grid-container">
+            <!-- 18 Placeholder Items -->
+            <div class="grid-item"><a href="#">PRISONER REGISTRY</a></div>
+            <div class="grid-item"><a href="#">SUPPORTING PRISONERS</a></div>
+            <div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
+            <div class="grid-item"><a href="#">ABOUT US</a></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
