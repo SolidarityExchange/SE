@@ -1,26 +1,26 @@
 [
   {
-    "id": "33",
-    "name": "Scarlett Maya",
-    "bio": "Convicted for social activism.",
+    "id": "39",
+    "name": "Natalie Maya",
+    "bio": "Detained for political dissent.",
     "profile_link": "#",
     "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "MN"
+    "state": "IN"
   },
   {
-    "id": "48",
-    "name": "Jonathan Stella",
-    "bio": "Jailed for exposing corruption.",
+    "id": "17",
+    "name": "Ethan Michael",
+    "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
     "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
     "state": "OH"
   },
   {
-    "id": "11",
-    "name": "William Thomas",
-    "bio": "Sentenced for investigative journalism.",
+    "id": "31",
+    "name": "Hannah Nathan",
+    "bio": "Held for whistleblowing.",
     "profile_link": "#",
     "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "MI"
+    "state": "MD"
   }
 ]
