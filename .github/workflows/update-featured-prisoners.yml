@@ -15,9 +15,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Install Required Packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq coreutils
+
       - name: Select Random Prisoners
         run: |
-          jq -c 'to_entries | map(.value) | sort_by(rand) | .[:3]' prisoners.json > featured_prisoners.json || echo "[]" > featured_prisoners.json
+          jq -c 'to_entries | map(.value) | .[]' prisoners.json | shuf -n 3 | jq -s '.' > featured_prisoners.json
 
       - name: Force Commit and Push Changes
         env:
