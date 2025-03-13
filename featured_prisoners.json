@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "33",
+    "name": "Scarlett Maya",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MN"
+  },
+  {
+    "id": "31",
+    "name": "Hannah Nathan",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "MD"
+  },
+  {
+    "id": "38",
+    "name": "Charlotte Evelyn",
+    "bio": "Charged for reporting war crimes.",
+    "profile_link": "#",
+    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
+    "state": "GA"
+  }
+]
