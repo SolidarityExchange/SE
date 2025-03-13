@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("prisoners.json")
+    fetch("https://solidarityexchange.github.io/SE/featured_prisoners.json")
         .then(response => response.json())
         .then(data => {
             const prisonersList = document.getElementById("prisoners-list");
