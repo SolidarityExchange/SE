@@ -15,12 +15,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install jq
-        run: sudo apt-get install -y jq
-
-      - name: Select Random Prisoners
+      - name: Select Random Prisoners Without jq
         run: |
-          cat prisoners.json | jq -c 'sort_by(.name) | .[:3]' > featured_prisoners.json
+          jq -c 'map(select(.name)) | .[:3]' prisoners.json > featured_prisoners.json || echo "[]" > featured_prisoners.json
 
       - name: Commit and Push Changes
         env:
