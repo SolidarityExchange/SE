@@ -1,0 +1,29 @@
+name: Update Featured Prisoners Weekly
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Runs every Monday at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update_prisoners:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Select Random Prisoners
+        run: |
+          PRISONERS=$(cat prisoners.json | jq -c 'shuffle | .[:3]')
+          echo "$PRISONERS" > featured_prisoners.json
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+          git add featured_prisoners.json
+          git commit -m "Updated weekly featured prisoners"
+          git push
+        continue-on-error: true
+  
