@@ -1,26 +1,26 @@
 [
   {
-    "id": "39",
-    "name": "Natalie Maya",
+    "id": "26",
+    "name": "Victoria Joshua",
     "bio": "Detained for political dissent.",
     "profile_link": "#",
     "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "IN"
+    "state": "GA"
   },
   {
-    "id": "17",
-    "name": "Ethan Michael",
-    "bio": "Sentenced for investigative journalism.",
+    "id": "44",
+    "name": "Scarlett Lucy",
+    "bio": "Jailed for exposing corruption.",
     "profile_link": "#",
     "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "OH"
+    "state": "CO"
   },
   {
-    "id": "31",
-    "name": "Hannah Nathan",
-    "bio": "Held for whistleblowing.",
+    "id": "21",
+    "name": "Benjamin Nathan",
+    "bio": "Arrested for human rights activism.",
     "profile_link": "#",
     "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "MD"
+    "state": "FL"
   }
 ]
