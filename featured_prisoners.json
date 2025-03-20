@@ -1,26 +1,26 @@
 [
   {
-    "id": "14",
-    "name": "Richard Holzer",
+    "id": "15",
+    "name": "Sarah Clendaniel",
     "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "WV"
+    "image_url": "/pictures/CLENDANIEL_SARAH.png",
+    "state": "FL"
   },
   {
-    "id": "04",
-    "name": "Christopher Brenner Cook",
-    "bio": "Detained for political activism.",
+    "id": "21",
+    "name": "Barry Gordon Croft",
+    "bio": "Arrested for human rights activism.",
     "profile_link": "#",
-    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "SC"
+    "image_url": "/pictures/CROFT_BARRY.png",
+    "state": "CO"
   },
   {
-    "id": "10",
-    "name": "Justin Daniel Lough",
-    "bio": "Jailed for exposing corruption.",
+    "id": "22",
+    "name": "Matthew F. Hale",
+    "bio": "Held for whistleblowing.",
     "profile_link": "#",
-    "image_url": "https://web.archive.org/web/20240714210228im_/https://justice-initiative.net/images/prisoners/james-allchurch.png",
-    "state": "NJ"
+    "image_url": "/pictures/HALE_MATTHEW.png",
+    "state": "IL"
   }
 ]
