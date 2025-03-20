@@ -1,26 +1,26 @@
 [
   {
-    "id": "15",
-    "name": "Sarah Clendaniel",
-    "bio": "Convicted for social activism.",
+    "id": "08",
+    "name": "Coby Dale Green",
+    "bio": "Imprisoned for speaking against injustice.",
     "profile_link": "#",
-    "image_url": "/pictures/CLENDANIEL_SARAH.png",
-    "state": "FL"
+    "image_url": "/pictures/GREEN_COBY.png",
+    "state": "AR"
   },
   {
-    "id": "21",
-    "name": "Barry Gordon Croft",
-    "bio": "Arrested for human rights activism.",
+    "id": "17",
+    "name": "Joshua Michael Steever",
+    "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
-    "image_url": "/pictures/CROFT_BARRY.png",
-    "state": "CO"
+    "image_url": "/pictures/STEEVER_JOSHUA.png",
+    "state": "NY"
   },
   {
-    "id": "22",
-    "name": "Matthew F. Hale",
-    "bio": "Held for whistleblowing.",
+    "id": "28",
+    "name": "Travis McMichael",
+    "bio": "Charged for reporting war crimes.",
     "profile_link": "#",
-    "image_url": "/pictures/HALE_MATTHEW.png",
-    "state": "IL"
+    "image_url": "/pictures/MCCHEMICHL_TRAVIS.png",
+    "state": "GA"
   }
 ]
