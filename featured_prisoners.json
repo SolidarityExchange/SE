@@ -1,19 +1,19 @@
 [
   {
-    "id": "08",
-    "name": "Coby Dale Green",
-    "bio": "Imprisoned for speaking against injustice.",
+    "id": "33",
+    "name": "Justen Michael Watkins",
+    "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "/pictures/GREEN_COBY.png",
-    "state": "AR"
+    "image_url": "/pictures/WATKINS_JUSTEN.png",
+    "state": "MI"
   },
   {
-    "id": "17",
-    "name": "Joshua Michael Steever",
-    "bio": "Sentenced for investigative journalism.",
+    "id": "24",
+    "name": "Dustin H Heathman",
+    "bio": "Jailed for exposing corruption.",
     "profile_link": "#",
-    "image_url": "/pictures/STEEVER_JOSHUA.png",
-    "state": "NY"
+    "image_url": "/pictures/HEATHMAN_DUSTIN.png",
+    "state": "FL"
   },
   {
     "id": "28",
