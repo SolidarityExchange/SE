@@ -1,26 +1,26 @@
 [
   {
-    "id": "10",
-    "name": "Aimenn Penny",
-    "bio": "Jailed for exposing corruption.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
-    "state": "TX"
-  },
-  {
-    "id": "22",
-    "name": "George D. Loeb Jr",
+    "id": "12",
+    "name": "Nicholas Welker",
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/JR_GEORGE.PNG",
-    "state": "MI"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/WELKER_NICHOLAS.PNG",
+    "state": "MA"
   },
   {
-    "id": "30",
-    "name": "Brandon Troy Higgs",
+    "id": "28",
+    "name": "Hannah Payne",
     "bio": "Charged for reporting war crimes.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HIGGS_BRANDON.PNG",
-    "state": "MN"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/PAYNE_HANNAH.PNG",
+    "state": "IL"
+  },
+  {
+    "id": "35",
+    "name": "Sophia Rosing",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/ROSING_SOPHIA.PNG",
+    "state": "MO"
   }
 ]
