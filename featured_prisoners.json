@@ -1,26 +1,26 @@
 [
   {
-    "id": "12",
-    "name": "Nicholas Welker",
-    "bio": "Held for whistleblowing.",
+    "id": "16",
+    "name": "Joshua Michael Steever",
+    "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/WELKER_NICHOLAS.PNG",
-    "state": "MA"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/STEEVER_JOSHUA.PNG",
+    "state": "MD"
   },
   {
-    "id": "28",
-    "name": "Hannah Payne",
-    "bio": "Charged for reporting war crimes.",
+    "id": "33",
+    "name": "Ian Mackenzie Cranston",
+    "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/PAYNE_HANNAH.PNG",
-    "state": "IL"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/CRANSTON_IAN.PNG",
+    "state": "MN"
   },
   {
-    "id": "35",
-    "name": "Sophia Rosing",
-    "bio": "Held for whistleblowing.",
+    "id": "01",
+    "name": "Ryan McCann",
+    "bio": "Journalist imprisoned for exposing corruption.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/ROSING_SOPHIA.PNG",
-    "state": "MO"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCCANN_RYAN.JPG",
+    "state": "IN"
   }
 ]
