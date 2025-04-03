@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Prisoner Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solidarity Dispatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="profile-container"></div>
 
-  <script>
+    <div class="topbar-container">
+        <div class="logo">
+            <img src="wide-logo-charcoal.jpg" alt="Logo">
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+
+ <script>
   async function loadProfile() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -50,5 +73,13 @@
 
   loadProfile();
 </script>
+
+ <div class="grid-container">
+        <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
+        <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
+        <div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
+        <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
+    </div>
+
 </body>
 </html>
