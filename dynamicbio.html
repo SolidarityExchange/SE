@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prisoner Profile</title>
+</head>
+<body>
+  <div id="profile-container"></div>
+
+  <script>
+    async function loadProfile() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id') || params.get('name');
+      const res = await fetch('prisoners.json');
+      const prisoners = await res.json();
+
+      const prisoner = prisoners.find(p => p.id === id || p.name === id);
+
+      if (prisoner) {
+        document.getElementById('profile-container').innerHTML = `
+          <h1>${prisoner.fullName}</h1>
+          <p>${prisoner.bio}</p>
+          <p>Location: ${prisoner.location}</p>
+          <p>MoneyGram: ${prisoner.moneyGram}</p>
+        `;
+      } else {
+        document.getElementById('profile-container').innerHTML = `<p>Profile not found.</p>`;
+      }
+    }
+
+    loadProfile();
+  </script>
+</body>
+</html>
