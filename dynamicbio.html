@@ -6,61 +6,6 @@
   <title>The Solidarity Dispatch</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: 'EB Garamond', serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    #profile-container {
-      text-align: center;
-      padding: 2rem;
-    }
-
-    #profile-container img {
-      max-width: 300px;
-      margin-bottom: 1rem;
-    }
-
-    .topbar-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .logo img {
-      height: 50px;
-    }
-
-    .social-links img {
-      height: 24px;
-      margin-left: 10px;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .grid-item a {
-      text-decoration: none;
-      padding: 1rem;
-      display: block;
-      background: #eee;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-
-    .grid-item a:hover {
-      background: #ddd;
-    }
-  </style>
 </head>
 <body>
 
@@ -84,7 +29,11 @@
     </div>
   </div>
 
-  <div id="profile-container"></div>
+  <div class="content">
+    <div class="featured-container" style="text-align: left;">
+      <div id="profile-container"></div>
+    </div>
+  </div>
 
   <script>
     async function loadProfile() {
@@ -105,7 +54,7 @@
       let html = `<h1>${prisoner.name || "Unnamed Prisoner"}</h1>`;
 
       if (prisoner.image_url) {
-        html += `<img src="${prisoner.image_url}" alt="${prisoner.name}">`;
+        html += `<img src="${prisoner.image_url}" alt="${prisoner.name}" style="max-width: 300px; margin-bottom: 1rem;">`;
       }
 
       if (prisoner.bio) {
