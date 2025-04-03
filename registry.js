@@ -29,12 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     const card = document.createElement("div");
                     card.classList.add("prisoner-card");
                     card.innerHTML = `
-                        <a href="${prisoner.profile_link}" class="full-card-link"></a>
+                        <a href="dynamicbio.html?id=${prisoner.id}" class="full-card-link"></a>
                         <img src="${prisoner.image_url}" alt="${prisoner.name}">
                         <div class="prisoner-name">${prisoner.name}</div>
                         <div class="prisoner-bio">${prisoner.bio}</div>
                         <div class="prisoner-state">State: ${prisoner.state}</div>
-                        <a href="${prisoner.profile_link}" class="profile-link">View Profile →</a>
+                        <a href="dynamicbio.html?id=${prisoner.id}" class="profile-link">View Profile →</a>
                     `;
                     prisonersList.appendChild(card);
                 });
