@@ -7,27 +7,48 @@
   <div id="profile-container"></div>
 
   <script>
-    async function loadProfile() {
-      const params = new URLSearchParams(window.location.search);
-      const id = params.get('id') || params.get('name');
-      const res = await fetch('prisoners.json');
-      const prisoners = await res.json();
+  async function loadProfile() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
 
-      const prisoner = prisoners.find(p => p.id === id || p.name === id);
+    const res = await fetch('prisoners.json');
+    const prisoners = await res.json();
 
-      if (prisoner) {
-        document.getElementById('profile-container').innerHTML = `
-          <h1>${prisoner.fullName}</h1>
-          <p>${prisoner.bio}</p>
-          <p>Location: ${prisoner.location}</p>
-          <p>MoneyGram: ${prisoner.moneyGram}</p>
-        `;
-      } else {
-        document.getElementById('profile-container').innerHTML = `<p>Profile not found.</p>`;
-      }
+    const prisoner = prisoners.find(p => p.id === id);
+
+    const container = document.getElementById('profile-container');
+
+    if (!prisoner) {
+      container.innerHTML = "<p>Profile not found.</p>";
+      return;
     }
 
-    loadProfile();
-  </script>
+    let html = `<h1>${prisoner.name || "Unnamed Prisoner"}</h1>`;
+
+    if (prisoner.image_url) {
+      html += `<img src="${prisoner.image_url}" alt="${prisoner.name}" style="max-width: 300px;">`;
+    }
+
+    if (prisoner.bio) {
+      html += `<p>${prisoner.bio}</p>`;
+    }
+
+    if (prisoner.state) {
+      html += `<p><strong>State:</strong> ${prisoner.state}</p>`;
+    }
+
+    if (prisoner.moneyGram) {
+      html += `<p><strong>MoneyGram:</strong> ${prisoner.moneyGram}</p>`;
+    }
+
+    if (prisoner.profile_link && prisoner.profile_link !== "#") {
+      html += `<p><a href="${prisoner.profile_link}">More info</a></p>`;
+    }
+
+    container.innerHTML = html;
+  }
+
+  loadProfile();
+</script>
 </body>
 </html>
