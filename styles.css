@@ -74,6 +74,11 @@ body {
     margin-bottom: 20px; /* Adds space below the search bar */
 }
 
+#profile-container {
+  text-align: center;
+  padding: 2rem;
+  background: white; /* 👈 this is the fix */
+}
 
 .featured-container {
     width: 100%;
