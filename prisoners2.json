@@ -1,0 +1,282 @@
+[
+  {
+    "id": "01",
+    "name": "Ryan McCann",
+    "bio": "Journalist imprisoned for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCCANN_RYAN.JPG",
+    "state": "IN"
+  },
+  {
+    "id": "02",
+    "name": "Derek Michael Chauvin",
+    "bio": "Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/CHAUVIN_DEREK.PNG",
+    "state": "TX"
+  },
+  {
+    "id": "03",
+    "name": "Christopher Brenner Cook",
+    "bio": "Whistleblower detained for leaking classified documents.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/COOK_CHRISTOPHER.JPG",
+    "state": "MN"
+  },
+  {
+    "id": "04",
+    "name": "Patrik Jordan Mathews",
+    "bio": "Detained for political activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/MATHEWS_PATRIK.PNG",
+    "state": "CO"
+  },
+  {
+    "id": "05",
+    "name": "Jacob Mark Robards",
+    "bio": "Journalist arrested for reporting on government abuses.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/ROBARDS_JACOB.JPG",
+    "state": "WI"
+  },
+  {
+    "id": "06",
+    "name": "William Alexander White",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/WHITE_WILLIAM.PNG",
+    "state": "GA"
+  },
+  {
+    "id": "07",
+    "name": "Coby Dale Green",
+    "bio": "Detained for leading protests.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/GREEN_COBY.PNG",
+    "state": "MN"
+  },
+  {
+    "id": "08",
+    "name": "Brian Mark Lemley Jr.",
+    "bio": "Imprisoned for speaking against injustice.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/JR._BRIAN.JPG",
+    "state": "CA"
+  },
+  {
+    "id": "09",
+    "name": "Justin Daniel Lough",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/LOUGH_JUSTIN.PNG",
+    "state": "WA"
+  },
+  {
+    "id": "10",
+    "name": "Aimenn Penny",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
+    "state": "TX"
+  },
+  {
+    "id": "11",
+    "name": "Christopher Paul Hasson",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HASSON_CHRISTOPHER.PNG",
+    "state": "MI"
+  },
+  {
+    "id": "12",
+    "name": "Nicholas Welker",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/WELKER_NICHOLAS.JPG",
+    "state": "MA"
+  },
+  {
+    "id": "13",
+    "name": "Richard Holzer",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HOLZER_RICHARD.PNG",
+    "state": "MI"
+  },
+  {
+    "id": "14",
+    "name": "Sarah Clendaniel",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/CLENDANIEL_SARAH.PNG",
+    "state": "PA"
+  },
+  {
+    "id": "15",
+    "name": "Stephen Pattison",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/PATTISON_STEPHEN.PNG",
+    "state": "FL"
+  },
+  {
+    "id": "16",
+    "name": "Joshua Michael Steever",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/STEEVER_JOSHUA.PNG",
+    "state": "MD"
+  },
+  {
+    "id": "17",
+    "name": "Henry Lambert Baird",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/BAIRD_HENRY.JPG",
+    "state": "OH"
+  },
+  {
+    "id": "18",
+    "name": "James Alex Fields",
+    "bio": "Detained for leading protests.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/FIELDS_JAMES.PNG",
+    "state": "MI"
+  },
+  {
+    "id": "19",
+    "name": "Adam Dean Fox",
+    "bio": "Arrested for human rights activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/FOX_ADAM.PNG",
+    "state": "WA"
+  },
+  {
+    "id": "20",
+    "name": "Barry Gordon Croft",
+    "bio": "Detained for political dissent.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/CROFT_BARRY.JPG",
+    "state": "PA"
+  },
+  {
+    "id": "21",
+    "name": "Matthew F. Hale",
+    "bio": "Arrested for human rights activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HALE_MATTHEW.PNG",
+    "state": "FL"
+  },
+  {
+    "id": "22",
+    "name": "George D. Loeb Jr",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/JR_GEORGE.JPG",
+    "state": "MI"
+  },
+  {
+    "id": "23",
+    "name": "Dustin H Heathman",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HEATHMAN_DUSTIN.PNG",
+    "state": "CO"
+  },
+  {
+    "id": "24",
+    "name": "Tyler Eugene Tenbrink",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/TENBRINK_TYLER.PNG",
+    "state": "AZ"
+  },
+  {
+    "id": "25",
+    "name": "Gregory McMichael",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_GREGORY.PNG",
+    "state": "GA"
+  },
+  {
+    "id": "26",
+    "name": "Jose Ismael Torres",
+    "bio": "Detained for political dissent.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/TORRES_JOSE.PNG",
+    "state": "GA"
+  },
+  {
+    "id": "27",
+    "name": "Travis McMichael",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_TRAVIS.PNG",
+    "state": "IN"
+  },
+  {
+    "id": "28",
+    "name": "Hannah Payne",
+    "bio": "Charged for reporting war crimes.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/PAYNE_HANNAH.PNG",
+    "state": "IL"
+  },
+  {
+    "id": "29",
+    "name": "William Bryan Jr.",
+    "bio": "Sentenced for investigative journalism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/JR._WILLIAM.JPG",
+    "state": "WA"
+  },
+  {
+    "id": "30",
+    "name": "Brandon Troy Higgs",
+    "bio": "Charged for reporting war crimes.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HIGGS_BRANDON.PNG",
+    "state": "MN"
+  },
+  {
+    "id": "31",
+    "name": "Brandon Clint Russell",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/RUSSELL_BRANDON.JPG",
+    "state": "MD"
+  },
+  {
+    "id": "32",
+    "name": "Justen Michael Watkins",
+    "bio": "Imprisoned for speaking against injustice.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/WATKINS_JUSTEN.PNG",
+    "state": "AZ"
+  },
+  {
+    "id": "33",
+    "name": "Ian Mackenzie Cranston",
+    "bio": "Convicted for social activism.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/CRANSTON_IAN.PNG",
+    "state": "MN"
+  },
+  {
+    "id": "34",
+    "name": "William Henry Fears",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/FEARS_WILLIAM.PNG",
+    "state": "MA"
+  },
+  {
+    "id": "35",
+    "name": "Sophia Rosing",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/ROSING_SOPHIA.JPG",
+    "state": "MO"
+  }
+]
