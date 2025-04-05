@@ -5,15 +5,17 @@
     "bio": "Journalist imprisoned for exposing corruption.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/MCCANN_RYAN.JPG",
-    "state": "IN"
+    "state": "IN",
+    "mailing_address": "Ryan Scott McCann 627751\nNashville / Davidson County Sheriff\u2019s Office\nPO Box 196383\nNashville, TN 37219-6383"
   },
   {
     "id": "02",
     "name": "Derek Michael Chauvin",
-    "bio": "Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”",
+    "bio": "Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He\u2019s still fighting the case through appeals. In the meantime, he\u2019s teaching himself Spanish and writes poetry to stay grounded. \u201cThe truth is simple,\u201d he says. \u201cI just want to be heard.\u201d",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/CHAUVIN_DEREK.PNG",
-    "state": "TX"
+    "state": "TX",
+    "mailing_address": "DEREK MICHAEL CHAUVIN #47849-509\nFCI Big Spring\nFEDERAL CORRECTIONAL INSTITUTION\n1900 SIMLER AVE\nBIG SPRING, TX   79720"
   },
   {
     "id": "03",
@@ -21,7 +23,8 @@
     "bio": "Whistleblower detained for leaking classified documents.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/COOK_CHRISTOPHER.JPG",
-    "state": "MN"
+    "state": "MN",
+    "mailing_address": "CHRISTOPHER BRENNER COOK: 87787-509\nFCI Bennettsville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 52020\nBENNETTSVILLE, SC   29512"
   },
   {
     "id": "04",
@@ -29,7 +32,8 @@
     "bio": "Detained for political activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/MATHEWS_PATRIK.PNG",
-    "state": "CO"
+    "state": "CO",
+    "mailing_address": "PATRIK JORDAN MATHEWS: 65229-037\nFCI Bennettsville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 52020\nBENNETTSVILLE, SC   29512"
   },
   {
     "id": "05",
@@ -37,7 +41,8 @@
     "bio": "Journalist arrested for reporting on government abuses.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/ROBARDS_JACOB.JPG",
-    "state": "WI"
+    "state": "WI",
+    "mailing_address": "JACOB MARK ROBARDS #75960-066\nFCI Coleman Medium\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1032\nCOLEMAN, FL   33521"
   },
   {
     "id": "06",
@@ -45,7 +50,8 @@
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/WHITE_WILLIAM.PNG",
-    "state": "GA"
+    "state": "GA",
+    "mailing_address": "William Alexander White #13888-084\nFCI CUMBERLAND\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nCUMBERLAND, MD   21501"
   },
   {
     "id": "07",
@@ -53,7 +59,8 @@
     "bio": "Detained for leading protests.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/GREEN_COBY.PNG",
-    "state": "MN"
+    "state": "MN",
+    "mailing_address": "COBY DALE GREEN #64429-510\nFCI Forrest City Low\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 9000\nFORREST CITY, AR   72336"
   },
   {
     "id": "08",
@@ -61,7 +68,8 @@
     "bio": "Imprisoned for speaking against injustice.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/JR._BRIAN.JPG",
-    "state": "CA"
+    "state": "CA",
+    "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
   },
   {
     "id": "09",
@@ -69,7 +77,8 @@
     "bio": "Convicted for social activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/LOUGH_JUSTIN.PNG",
-    "state": "WA"
+    "state": "WA",
+    "mailing_address": "JUSTIN DANIEL LOUGH #21783-084\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
   },
   {
     "id": "10",
@@ -77,7 +86,8 @@
     "bio": "Jailed for exposing corruption.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
-    "state": "TX"
+    "state": "TX",
+    "mailing_address": "AIMENN PENNY, 51942-510\nFCI Hazelton\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 5000\nBRUCETON MILLS, WV   26525"
   },
   {
     "id": "11",
@@ -85,7 +95,8 @@
     "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/HASSON_CHRISTOPHER.PNG",
-    "state": "MI"
+    "state": "MI",
+    "mailing_address": "CHRISTOPHER PAUL HASSON # 64544-037\nFEDERAL CORRECTIONAL INSTITUTION\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nPETERSBURG, VA   23804"
   },
   {
     "id": "12",
@@ -93,7 +104,8 @@
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/WELKER_NICHOLAS.JPG",
-    "state": "MA"
+    "state": "MA",
+    "mailing_address": "NICHOLAS WELKER #50093-510\nFCI Terre Haute\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 33\nTERRE HAUTE, IN   47808"
   },
   {
     "id": "13",
@@ -101,7 +113,8 @@
     "bio": "Convicted for social activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/HOLZER_RICHARD.PNG",
-    "state": "MI"
+    "state": "MI",
+    "mailing_address": "RICHARD HOLZER, 45531-013\nFCI GILMER\nFEDERAL CORRECTIONAL INSTITUTION\nPO BOX 6000\nGLENVILLE, WV   26351"
   },
   {
     "id": "14",
@@ -109,7 +122,8 @@
     "bio": "Convicted for social activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/CLENDANIEL_SARAH.PNG",
-    "state": "PA"
+    "state": "PA",
+    "mailing_address": "SARAH BETH CLENDANIEL, #42941-510\nFCI Tallahassee\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 5000\nTALLAHASSEE, FL   32314"
   },
   {
     "id": "15",
@@ -117,7 +131,8 @@
     "bio": "Convicted for social activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/PATTISON_STEPHEN.PNG",
-    "state": "FL"
+    "state": "FL",
+    "mailing_address": "STEPHEN REED PATTISON\n19944-509\nUSP McCreary\nU.S. PENITENTIARY\nP.O. BOX 3000\nPINE KNOT,\u00a0KY\u00a0\u00a0\u00a042635"
   },
   {
     "id": "16",
@@ -125,7 +140,8 @@
     "bio": "Convicted for social activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/STEEVER_JOSHUA.PNG",
-    "state": "MD"
+    "state": "MD",
+    "mailing_address": "Joshua Michael Steever\n#75745-067\nFCI Otisville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nOTISVILLE, NY   10963"
   },
   {
     "id": "17",
@@ -133,7 +149,8 @@
     "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BAIRD_HENRY.JPG",
-    "state": "OH"
+    "state": "OH",
+    "mailing_address": "Henry Lambert Baird\n#75744-067\nRRM Philadelphia\nRESIDENTIAL REENTRY OFFICE\n2ND & CHESTNUT ST - 7TH FL\nPHILADELPHIA,\u00a0PA\u00a0\u00a019106"
   },
   {
     "id": "18",
@@ -141,7 +158,8 @@
     "bio": "Detained for leading protests.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/FIELDS_JAMES.PNG",
-    "state": "MI"
+    "state": "MI",
+    "mailing_address": "James Alex Fields\n#22239-084\nUSP Allenwood\nU.S. PENITENTIARY\nPO Box 3000\nWhite Deer, PA 17887"
   },
   {
     "id": "19",
@@ -149,7 +167,8 @@
     "bio": "Arrested for human rights activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/FOX_ADAM.PNG",
-    "state": "WA"
+    "state": "WA",
+    "mailing_address": "Adam Dean Fox\n11843-509\nUSP Florence ADMAX\nU.S. PENITENTIARY\nPO BOX 8500\nFLORENCE,\u00a0CO\u00a0\u00a0\u00a081226"
   },
   {
     "id": "20",
@@ -157,7 +176,8 @@
     "bio": "Detained for political dissent.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/CROFT_BARRY.JPG",
-    "state": "PA"
+    "state": "PA",
+    "mailing_address": "Barry Gordon Croft\n11796-509\nUSP Florence ADMAX\nU.S. PENITENTIARY\nPO BOX 8500\nFLORENCE,\u00a0CO\u00a0\u00a0\u00a081226"
   },
   {
     "id": "21",
@@ -165,7 +185,8 @@
     "bio": "Arrested for human rights activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/HALE_MATTHEW.PNG",
-    "state": "FL"
+    "state": "FL",
+    "mailing_address": "Matthew Hale\n15177-424\nFCI Marion\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nMARION,\u00a0IL\u00a0\u00a0\u00a062959"
   },
   {
     "id": "22",
@@ -173,7 +194,8 @@
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/JR_GEORGE.JPG",
-    "state": "MI"
+    "state": "MI",
+    "mailing_address": "Loeb, George D JR., DC# 292124\nPO Box 23608\nTampa, FL 33623"
   },
   {
     "id": "23",
@@ -181,7 +203,8 @@
     "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/HEATHMAN_DUSTIN.PNG",
-    "state": "CO"
+    "state": "CO",
+    "mailing_address": "Heathman, Dustin H., DC# 524936\nPO Box 23608\nTampa, FL 33623"
   },
   {
     "id": "24",
@@ -189,7 +212,8 @@
     "bio": "Jailed for exposing corruption.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/TENBRINK_TYLER.PNG",
-    "state": "AZ"
+    "state": "AZ",
+    "mailing_address": "Tenbrink, Tyler E., DC# G50325\nPO Box 23608\nTampa, FL 33623"
   },
   {
     "id": "25",
@@ -197,7 +221,8 @@
     "bio": "Jailed for exposing corruption.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_GREGORY.PNG",
-    "state": "GA"
+    "state": "GA",
+    "mailing_address": "GREGORY JOHNS MCMICHAEL #1003053181\nAUGUSTA STATE MED. PRISON\n3001 Gordon Hwy\nGrovetown, GA 30813"
   },
   {
     "id": "26",
@@ -205,7 +230,8 @@
     "bio": "Detained for political dissent.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/TORRES_JOSE.PNG",
-    "state": "GA"
+    "state": "GA",
+    "mailing_address": "Jose Ismael Torres #1001973704\nJefferson County Correctional Institution\n1159 Clarks Mill Road\nLouisville, GA 30434"
   },
   {
     "id": "27",
@@ -213,7 +239,8 @@
     "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_TRAVIS.PNG",
-    "state": "IN"
+    "state": "IN",
+    "mailing_address": "Travis McMichael #1003053360\nHays State Prison\n777 Underwood Drive\nTrion, GA 30753"
   },
   {
     "id": "28",
@@ -221,7 +248,8 @@
     "bio": "Charged for reporting war crimes.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/PAYNE_HANNAH.PNG",
-    "state": "IL"
+    "state": "IL",
+    "mailing_address": "PAYNE, HANNAH RENEA\nGDC ID: 1003503764\n373 Upper River Road\nHawkinsville,\u00a0GA\u00a031036"
   },
   {
     "id": "29",
@@ -229,7 +257,8 @@
     "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/JR._WILLIAM.JPG",
-    "state": "WA"
+    "state": "WA",
+    "mailing_address": "William Roderick Bryan\nGDC ID: 1003053319\n3259 Valtech Road\nValdosta,\u00a0GA\u00a031601"
   },
   {
     "id": "30",
@@ -237,7 +266,8 @@
     "bio": "Charged for reporting war crimes.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/HIGGS_BRANDON.PNG",
-    "state": "MN"
+    "state": "MN",
+    "mailing_address": "Brandon Troy Higgs, SID #4595997\nMaryland Correctional Training Center\n18800 Roxbury Road\nHagerstown, Maryland 21746"
   },
   {
     "id": "31",
@@ -245,7 +275,8 @@
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/RUSSELL_BRANDON.JPG",
-    "state": "MD"
+    "state": "MD",
+    "mailing_address": "Brandon Clint Russell, SID # 5348309\nChesapeake Detention Facility\n401 East Madison Street\nBaltimore, Maryland 21202"
   },
   {
     "id": "32",
@@ -253,7 +284,8 @@
     "bio": "Imprisoned for speaking against injustice.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/WATKINS_JUSTEN.PNG",
-    "state": "AZ"
+    "state": "AZ",
+    "mailing_address": "Justen Michael Watkins, #707915\nOaks Correctional Facility\n1500 Caberfae Highway\nManistee, MI 49660"
   },
   {
     "id": "33",
@@ -261,7 +293,8 @@
     "bio": "Convicted for social activism.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/CRANSTON_IAN.PNG",
-    "state": "MN"
+    "state": "MN",
+    "mailing_address": "Ian Mackenzie Cranston\nSID#23824387\nSnake River Correctional Institution\n777 Stanton Blvd.\nOntario, Oregon 97914-8335"
   },
   {
     "id": "34",
@@ -269,7 +302,8 @@
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/FEARS_WILLIAM.PNG",
-    "state": "MA"
+    "state": "MA",
+    "mailing_address": "Smart Communications/PA DOC\nWILLIAM HENRY FEARS/QQ4688\nState Correctional Institution\nPO Box 33028\nSt. Petersburg, Florida 33733"
   },
   {
     "id": "35",
@@ -277,6 +311,7 @@
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/ROSING_SOPHIA.JPG",
-    "state": "MO"
+    "state": "MO",
+    "mailing_address": "Smart Communications/Lexington-Fayette Co.\nSophia Rosing #191451\nPO Box 9198\nSeminole, FL 33775-9198"
   }
 ]
