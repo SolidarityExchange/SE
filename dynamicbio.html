@@ -40,7 +40,7 @@
       const params = new URLSearchParams(window.location.search);
       const id = params.get('id');
 
-      const res = await fetch('prisoners.json');
+      const res = await fetch('prisoners2.json');
       const prisoners = await res.json();
 
       const prisoner = prisoners.find(p => p.id === id);
@@ -64,6 +64,10 @@
       if (prisoner.state) {
         html += `<p><strong>State:</strong> ${prisoner.state}</p>`;
       }
+
+      if (prisoner.mailing_address) {
+        html += `<p><strong>Mailing Address:</strong><br><span style="white-space: pre-line;">${prisoner.mailing_address}</span></p>`;
+}
 
       if (prisoner.moneyGram) {
         html += `<p><strong>MoneyGram:</strong> ${prisoner.moneyGram}</p>`;
