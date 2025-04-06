@@ -67,7 +67,7 @@
     "name": "Brian Mark Lemley Jr.",
     "bio": "Imprisoned for speaking against injustice.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/JR._BRIAN.JPG",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/LEMLEY_BRIAN.png",
     "state": "NJ",
     "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
   },
@@ -171,15 +171,6 @@
     "mailing_address": "Adam Dean Fox\n11843-509\nUSP Florence ADMAX\nU.S. PENITENTIARY\nPO BOX 8500\nFLORENCE,\u00a0CO\u00a0\u00a0\u00a081226"
   },
   {
-    "id": "20",
-    "name": "Barry Gordon Croft",
-    "bio": "Detained for political dissent.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/CROFT_BARRY.JPG",
-    "state": "CO",
-    "mailing_address": "Barry Gordon Croft\n11796-509\nUSP Florence ADMAX\nU.S. PENITENTIARY\nPO BOX 8500\nFLORENCE,\u00a0CO\u00a0\u00a0\u00a081226"
-  },
-  {
     "id": "21",
     "name": "Matthew F. Hale",
     "bio": "Arrested for human rights activism.",
@@ -193,7 +184,7 @@
     "name": "George D. Loeb Jr",
     "bio": "Held for whistleblowing.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/JR_GEORGE.JPG",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/LOEB_GEORGE.PNG",
     "state": "FL",
     "mailing_address": "Loeb, George D JR., DC# 292124\nPO Box 23608\nTampa, FL 33623"
   },
@@ -256,7 +247,7 @@
     "name": "William Bryan Jr.",
     "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/JR._WILLIAM.JPG",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/BRYAN_WILLIAM.PNG",
     "state": "GA",
     "mailing_address": "William Roderick Bryan\nGDC ID: 1003053319\n3259 Valtech Road\nValdosta,\u00a0GA\u00a031601"
   },
