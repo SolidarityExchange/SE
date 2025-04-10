@@ -69,18 +69,17 @@
       html += `<p><strong>Mailing Address:</strong><br><span style="white-space: pre-line;">${prisoner.mailing_address}</span></p>`;
     }
 
-    if (prisoner.moneyGram) {
-      html += `<p><strong>MoneyGram:</strong> ${prisoner.moneyGram}</p>`;
-    }
-
-    // Detect if prisoner is in federal custody
+    // Check if federal
     const isFederal = /FEDERAL CORRECTIONAL INSTITUTION|U\.S\. PENITENTIARY/.test(prisoner.mailing_address);
 
     if (isFederal) {
-      html += `<div style="margin-top: 1rem; padding: 1rem; border: 2px solid #ccc; background-color: #f9f9f9;">
-        <strong>Note for Federal Prisoners:</strong><br>
-        To donate to a federal prisoner, use <em>MoneyGram</em> with their registration number and select <em>BOP (Bureau of Prisons)</em> as the recipient agency. More detailed instructions are available on our <a href="support.html">support page</a>.
-      </div>`;
+      html += `<p style="color: green;"><strong>FEDERAL DONATION INSTRUCTIONS GO HERE</strong></p>`;
+    } else if (prisoner.facility_url) {
+      html += `<p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
+    }
+
+    if (prisoner.moneyGram) {
+      html += `<p><strong>MoneyGram:</strong> ${prisoner.moneyGram}</p>`;
     }
 
     if (prisoner.profile_link && prisoner.profile_link !== "#") {
