@@ -3,135 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporting Prisoners</title>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <title>Grid Navigation</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'EB Garamond', sans-serif;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f4;
-            padding-top: 120px; /* Adjusted for fixed topbar */
-        }
-
-        .topbar-container {
-            width: 100%;
-            background: #222;
-            color: white;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px 0;
-            z-index: 1000;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .logo img {
-            max-width: 150px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .social-links img {
-            width: 24px;
-            height: 24px;
-            filter: grayscale(100%) contrast(200%);
-        }
-
-        .content {
-            width: 80%;
-            max-width: 900px;
-            margin-top: 20px;
-        }
-
-        /* Featured Prisoners Section */
-
-        /* Grid Navigation */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Always 4 columns per row */
-            gap: 10px;
-            width: 100%;
-    	    margin-bottom: 50px; /* Extra margin to allow scrolling */
-        }
-
-.grid-item {
-    position: relative;
-    height: 150px;
-    background-size: cover; /* Ensures the image covers the entire item */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-        .grid-item:hover {
-            transform: scale(1.05);
-        }
-
-        .grid-item::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .grid-item a {
-            position: relative;
-            z-index: 2;
-            text-decoration: none;
-            color: white;
-            padding: 10px 15px;
-            background: rgba(0, 0, 0, 0.3); /* Reduced opacity */
-            border-radius: 5px;
-        }
-
-        /* Assign background images */
-.grid-item:nth-child(1) { background-image: url('prisonerregistry.jpg'); }
-.grid-item:nth-child(2) { background-image: url('prisonersupport.bmp'); }
-.grid-item:nth-child(3) { background-image: url('dispatchtransparent.jpg'); }
-.grid-item:nth-child(4) { background-image: url('wide-logo-charcoal.jpg'); }
-        
-        @media (max-width: 768px) {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .grid-container {
-                grid-template-columns: repeat(1, 1fr); /* 1 item per row on very small screens */
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -156,20 +30,38 @@
     </div>
 
     <div class="content">
+        <div class="featured-container" style="text-align: left;">
+            <div class="featured-header">Supporting Prisoners</div>
+            <div class="support-text">
+                <p>You can support political prisoners by sending letters through the mail, using our email-to-letter proxy service, or contributing commissary funds. These small acts of solidarity can make a real difference in the lives of incarcerated people.</p>
+                <p>We work hard to provide accurate information, but mistakes happen. If you notice an error or outdated info, please double-check with the official sources provided—and let us know so we can fix it.</p>
 
-        <!-- Featured Prisoners Section -->
-<br />
-<br />
-<br />
-        <!-- Grid Navigation -->
-        <div class="grid-container">
-            <!-- 18 Placeholder Items -->
-            <div class="grid-item"><a href="#">PRISONER REGISTRY</a></div>
-            <div class="grid-item"><a href="#">SUPPORTING PRISONERS</a></div>
-            <div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
-            <div class="grid-item"><a href="#">ABOUT US</a></div>
+                <h3>Finding Federal Prisoners</h3>
+                <p>You can search for individuals in federal prisons using the <a href="#">Federal Inmate Locator</a>.</p>
+
+                <h3>Finding State Prisoners</h3>
+                <p>Each state has its own inmate lookup system. <a href="#">Click here</a> for a list of state prisoner lookup tools (coming soon).</p>
+
+                <h3>Finding County Jail Detainees</h3>
+                <p>For county jails, you may need to check the jail’s official website. Search online for the county name and "inmate lookup" or "jail roster." Many county jails have online search tools.</p>
+
+                <h3>Using VINELink as a 'catch-all'</h3>
+                <p>VINELink is a national service that allows you to locate most state and local prisoners as well as some federal prisoners. You can also receive notifications about their custody status. You can access it at <a href="https://www.vinelink.com" target="_blank">VINELink.com</a>.</p>
+
+                <h3>Writing to Prisoners</h3>
+                <p>One of the best ways to support incarcerated individuals is by sending them letters. A simple letter can provide encouragement, solidarity, and connection to the outside world.</p>
+                <p>You can also use our <a href="#">email-to-letter proxy service</a> to send messages to prisoners without revealing your personal address.</p>
+            </div>
+            <br />
+            <p><a href="index.html">Return to homepage</a></p>
         </div>
+    </div>
 
+    <div class="grid-container">
+        <div class="grid-item"><a href="#">PRISONER REGISTRY</a></div>
+        <div class="grid-item"><a href="#">SUPPORTING PRISONERS</a></div>
+        <div class="grid-item"><a href="dispatch.html">THE SOLIDARITY DISPATCH</a></div>
+        <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
     </div>
 
 </body>
