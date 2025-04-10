@@ -6,7 +6,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
     "state": "TN",
-    "mailing_address": "Ryan Scott McCann 627751\nNashville / Davidson County Sheriff\u2019s Office\nPO Box 196383\nNashville, TN 37219-6383"
+    "mailing_address": "Ryan Scott McCann 627751\nNashville / Davidson County Sheriff\u2019s Office\nPO Box 196383\nNashville, TN 37219-6383",
+    "facility_url": "https://dcso.nashville.gov/Search/Details/1034861?searchType=Person"
   },
   {
     "id": "02",
@@ -150,7 +151,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
     "state": "PA",
-    "mailing_address": "Henry Lambert Baird\n#75744-067\nRRM Philadelphia\nRESIDENTIAL REENTRY OFFICE\n2ND & CHESTNUT ST - 7TH FL\nPHILADELPHIA,\u00a0PA\u00a0\u00a019106"
+    "mailing_address": "Henry Lambert Baird\n#75744-067\nRRM Philadelphia\nRESIDENTIAL REENTRY OFFICE\n2ND & CHESTNUT ST - 7TH FL\nPHILADELPHIA,\u00a0PA\u00a0\u00a019106",
+    "facility_url": "https://www.bop.gov/inmateloc/"
   },
   {
     "id": "18",
@@ -186,7 +188,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/LOEB_GEORGE.PNG",
     "state": "FL",
-    "mailing_address": "Loeb, George D JR., DC# 292124\nPO Box 23608\nTampa, FL 33623"
+    "mailing_address": "Loeb, George D JR., DC# 292124\nPO Box 23608\nTampa, FL 33623",
+    "facility_url": "http://www.dc.state.fl.us/offenderSearch/detail.aspx?Page=Detail&DCNumber=292124&TypeSearch=AI"
   },
   {
     "id": "23",
@@ -195,7 +198,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/HEATHMAN_DUSTIN.PNG",
     "state": "FL",
-    "mailing_address": "Heathman, Dustin H., DC# 524936\nPO Box 23608\nTampa, FL 33623"
+    "mailing_address": "Heathman, Dustin H., DC# 524936\nPO Box 23608\nTampa, FL 33623",
+    "facility_url": "https://fdc.myflorida.com/offenderSearch/detail.aspx?Page=Detail&DCNumber=524936&TypeSearch=AI"
   },
   {
     "id": "24",
@@ -204,7 +208,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/TENBRINK_TYLER.PNG",
     "state": "FL",
-    "mailing_address": "Tenbrink, Tyler E., DC# G50325\nPO Box 23608\nTampa, FL 33623"
+    "mailing_address": "Tenbrink, Tyler E., DC# G50325\nPO Box 23608\nTampa, FL 33623",
+    "facility_url": "https://pubapps.fdc.myflorida.com/OffenderSearch/Search.aspx?TypeSearch=AI"
   },
   {
     "id": "25",
@@ -213,7 +218,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_GREGORY.PNG",
     "state": "GA",
-    "mailing_address": "GREGORY JOHNS MCMICHAEL #1003053181\nAUGUSTA STATE MED. PRISON\n3001 Gordon Hwy\nGrovetown, GA 30813"
+    "mailing_address": "GREGORY JOHNS MCMICHAEL #1003053181\nAUGUSTA STATE MED. PRISON\n3001 Gordon Hwy\nGrovetown, GA 30813",
+    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
   },
   {
     "id": "26",
@@ -222,7 +228,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/TORRES_JOSE.PNG",
     "state": "GA",
-    "mailing_address": "Jose Ismael Torres #1001973704\nJefferson County Correctional Institution\n1159 Clarks Mill Road\nLouisville, GA 30434"
+    "mailing_address": "Jose Ismael Torres #1001973704\nJefferson County Correctional Institution\n1159 Clarks Mill Road\nLouisville, GA 30434",
+    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
   },
   {
     "id": "27",
@@ -231,7 +238,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_TRAVIS.PNG",
     "state": "GA",
-    "mailing_address": "Travis McMichael #1003053360\nHays State Prison\n777 Underwood Drive\nTrion, GA 30753"
+    "mailing_address": "Travis McMichael #1003053360\nHays State Prison\n777 Underwood Drive\nTrion, GA 30753",
+    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
   },
   {
     "id": "28",
@@ -240,7 +248,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/PAYNE_HANNAH.PNG",
     "state": "GA",
-    "mailing_address": "PAYNE, HANNAH RENEA\nGDC ID: 1003503764\n373 Upper River Road\nHawkinsville,\u00a0GA\u00a031036"
+    "mailing_address": "PAYNE, HANNAH RENEA\nGDC ID: 1003503764\n373 Upper River Road\nHawkinsville,\u00a0GA\u00a031036",
+    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
   },
   {
     "id": "29",
@@ -249,7 +258,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BRYAN_WILLIAM.PNG",
     "state": "GA",
-    "mailing_address": "William Roderick Bryan\nGDC ID: 1003053319\n3259 Valtech Road\nValdosta,\u00a0GA\u00a031601"
+    "mailing_address": "William Roderick Bryan\nGDC ID: 1003053319\n3259 Valtech Road\nValdosta,\u00a0GA\u00a031601",
+    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
   },
   {
     "id": "30",
@@ -258,7 +268,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/HIGGS_BRANDON.PNG",
     "state": "MD",
-    "mailing_address": "Brandon Troy Higgs, SID #4595997\nMaryland Correctional Training Center\n18800 Roxbury Road\nHagerstown, Maryland 21746"
+    "mailing_address": "Brandon Troy Higgs, SID #4595997\nMaryland Correctional Training Center\n18800 Roxbury Road\nHagerstown, Maryland 21746",
+    "facility_url": "https://www.dpscs.state.md.us/inmate/search.do?searchType=detail&id=779325171"
   },
   {
     "id": "31",
@@ -267,7 +278,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
     "state": "MD",
-    "mailing_address": "Brandon Clint Russell, SID # 5348309\nChesapeake Detention Facility\n401 East Madison Street\nBaltimore, Maryland 21202"
+    "mailing_address": "Brandon Clint Russell, SID # 5348309\nChesapeake Detention Facility\n401 East Madison Street\nBaltimore, Maryland 21202",
+    "facility_url": "https://www.dpscs.state.md.us/inmate/"
   },
   {
     "id": "32",
@@ -276,7 +288,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/WATKINS_JUSTEN.PNG",
     "state": "MI",
-    "mailing_address": "Justen Michael Watkins, #707915\nOaks Correctional Facility\n1500 Caberfae Highway\nManistee, MI 49660"
+    "mailing_address": "Justen Michael Watkins, #707915\nOaks Correctional Facility\n1500 Caberfae Highway\nManistee, MI 49660",
+    "facility_url": "https://mdocweb.state.mi.us/OTIS2/otis2.aspx"
   },
   {
     "id": "33",
@@ -285,7 +298,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/CRANSTON_IAN.PNG",
     "state": "OR",
-    "mailing_address": "Ian Mackenzie Cranston\nSID#23824387\nSnake River Correctional Institution\n777 Stanton Blvd.\nOntario, Oregon 97914-8335"
+    "mailing_address": "Ian Mackenzie Cranston\nSID#23824387\nSnake River Correctional Institution\n777 Stanton Blvd.\nOntario, Oregon 97914-8335",
+    "facility_url": "https://docpub.state.or.us/OOS/searchCriteria.jsf"
   },
   {
     "id": "34",
@@ -294,7 +308,8 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/FEARS_WILLIAM.PNG",
     "state": "FL",
-    "mailing_address": "Smart Communications/PA DOC\nWILLIAM HENRY FEARS/QQ4688\nState Correctional Institution\nPO Box 33028\nSt. Petersburg, Florida 33733"
+    "mailing_address": "Smart Communications/PA DOC\nWILLIAM HENRY FEARS/QQ4688\nState Correctional Institution\nPO Box 33028\nSt. Petersburg, Florida 33733",
+    "facility_url": "https://inmatelocator.cor.pa.gov/#/"
   },
   {
     "id": "35",
@@ -303,6 +318,7 @@
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
     "state": "FL",
-    "mailing_address": "Smart Communications/Lexington-Fayette Co.\nSophia Rosing #191451\nPO Box 9198\nSeminole, FL 33775-9198"
+    "mailing_address": "Smart Communications/Lexington-Fayette Co.\nSophia Rosing #191451\nPO Box 9198\nSeminole, FL 33775-9198",
+    "facility_url": "Inmate information | City of Lexington, Kentucky"
   }
 ]
