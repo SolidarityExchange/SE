@@ -40,7 +40,7 @@
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
 
-    const res = await fetch('prisoners.json');
+    const res = await fetch('linktest.json');
     const prisoners = await res.json();
 
     const prisoner = prisoners.find(p => p.id === id);
