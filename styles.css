@@ -244,7 +244,7 @@ body {
 .grid-item:nth-child(1) { background-image: url('prisonerregistry.jpg'); }
 .grid-item:nth-child(2) { background-image: url('prisonersupport.bmp'); }
 .grid-item:nth-child(3) { background-image: url('dispatchtransparent.jpg'); }
-.grid-item:nth-child(4) { background-image: url('wide-logo-charcoal.jpg'); }
+.grid-item:nth-child(4) { background-image: url('newlogotransparent.png'); }
 
 /* --- Responsive Fixes --- */
 @media (max-width: 768px) {
