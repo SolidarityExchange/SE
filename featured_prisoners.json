@@ -1,30 +1,30 @@
 [
   {
-    "id": "11",
-    "name": "Christopher Paul Hasson",
-    "bio": "Sentenced for investigative journalism.",
+    "id": "16",
+    "name": "Joshua Michael Steever",
+    "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HASSON_CHRISTOPHER.PNG",
-    "state": "VA",
-    "mailing_address": "CHRISTOPHER PAUL HASSON # 64544-037\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nPETERSBURG, VA   23804"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/STEEVER_JOSHUA.PNG",
+    "state": "NY",
+    "mailing_address": "Joshua Michael Steever\n#75745-067\nFCI Otisville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nOTISVILLE, NY   10963"
   },
   {
-    "id": "25",
-    "name": "Gregory McMichael",
-    "bio": "Jailed for exposing corruption.",
+    "id": "08",
+    "name": "Brian Mark Lemley Jr.",
+    "bio": "Imprisoned for speaking against injustice.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_GREGORY.PNG",
-    "state": "GA",
-    "mailing_address": "GREGORY JOHNS MCMICHAEL #1003053181\nAUGUSTA STATE MED. PRISON\n3001 Gordon Hwy\nGrovetown, GA 30813",
-    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/LEMLEY_BRIAN.png",
+    "state": "NJ",
+    "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
   },
   {
-    "id": "03",
-    "name": "Christopher Brenner Cook",
-    "bio": "Whistleblower detained for leaking classified documents.",
+    "id": "30",
+    "name": "Brandon Troy Higgs",
+    "bio": "Charged for reporting war crimes.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
-    "state": "SC",
-    "mailing_address": "CHRISTOPHER BRENNER COOK: 87787-509\nFCI Bennettsville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 52020\nBENNETTSVILLE, SC   29512"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HIGGS_BRANDON.PNG",
+    "state": "MD",
+    "mailing_address": "Brandon Troy Higgs, SID #4595997\nMaryland Correctional Training Center\n18800 Roxbury Road\nHagerstown, Maryland 21746",
+    "facility_url": "https://www.dpscs.state.md.us/inmate/search.do?searchType=detail&id=779325171"
   }
 ]
