@@ -1,21 +1,22 @@
 [
   {
-    "id": "16",
-    "name": "Joshua Michael Steever",
+    "id": "33",
+    "name": "Ian Mackenzie Cranston",
     "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/STEEVER_JOSHUA.PNG",
-    "state": "NY",
-    "mailing_address": "Joshua Michael Steever\n#75745-067\nFCI Otisville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nOTISVILLE, NY   10963"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/CRANSTON_IAN.PNG",
+    "state": "OR",
+    "mailing_address": "Ian Mackenzie Cranston\nSID#23824387\nSnake River Correctional Institution\n777 Stanton Blvd.\nOntario, Oregon 97914-8335",
+    "facility_url": "https://docpub.state.or.us/OOS/searchCriteria.jsf"
   },
   {
-    "id": "08",
-    "name": "Brian Mark Lemley Jr.",
-    "bio": "Imprisoned for speaking against injustice.",
+    "id": "18",
+    "name": "James Alex Fields",
+    "bio": "Detained for leading protests.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/LEMLEY_BRIAN.png",
-    "state": "NJ",
-    "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/FIELDS_JAMES.PNG",
+    "state": "PA",
+    "mailing_address": "James Alex Fields\n#22239-084\nUSP Allenwood\nU.S. PENITENTIARY\nPO Box 3000\nWhite Deer, PA 17887"
   },
   {
     "id": "30",
