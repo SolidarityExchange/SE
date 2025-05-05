@@ -1,31 +1,30 @@
 [
   {
-    "id": "33",
-    "name": "Ian Mackenzie Cranston",
-    "bio": "Convicted for social activism.",
+    "id": "02",
+    "name": "Derek Michael Chauvin",
+    "bio": "Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/CRANSTON_IAN.PNG",
-    "state": "OR",
-    "mailing_address": "Ian Mackenzie Cranston\nSID#23824387\nSnake River Correctional Institution\n777 Stanton Blvd.\nOntario, Oregon 97914-8335",
-    "facility_url": "https://docpub.state.or.us/OOS/searchCriteria.jsf"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/CHAUVIN_DEREK.PNG",
+    "state": "TX",
+    "mailing_address": "DEREK MICHAEL CHAUVIN #47849-509\nFCI Big Spring\nFEDERAL CORRECTIONAL INSTITUTION\n1900 SIMLER AVE\nBIG SPRING, TX   79720"
   },
   {
-    "id": "18",
-    "name": "James Alex Fields",
-    "bio": "Detained for leading protests.",
+    "id": "21",
+    "name": "Matthew F. Hale",
+    "bio": "Arrested for human rights activism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/FIELDS_JAMES.PNG",
-    "state": "PA",
-    "mailing_address": "James Alex Fields\n#22239-084\nUSP Allenwood\nU.S. PENITENTIARY\nPO Box 3000\nWhite Deer, PA 17887"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HALE_MATTHEW.PNG",
+    "state": "IL",
+    "mailing_address": "Matthew Hale\n15177-424\nFCI Marion\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nMARION, IL   62959"
   },
   {
-    "id": "30",
-    "name": "Brandon Troy Higgs",
-    "bio": "Charged for reporting war crimes.",
+    "id": "27",
+    "name": "Travis McMichael",
+    "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HIGGS_BRANDON.PNG",
-    "state": "MD",
-    "mailing_address": "Brandon Troy Higgs, SID #4595997\nMaryland Correctional Training Center\n18800 Roxbury Road\nHagerstown, Maryland 21746",
-    "facility_url": "https://www.dpscs.state.md.us/inmate/search.do?searchType=detail&id=779325171"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_TRAVIS.PNG",
+    "state": "GA",
+    "mailing_address": "Travis McMichael #1003053360\nHays State Prison\n777 Underwood Drive\nTrion, GA 30753",
+    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
   }
 ]
