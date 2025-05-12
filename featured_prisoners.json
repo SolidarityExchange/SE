@@ -1,30 +1,30 @@
 [
   {
-    "id": "02",
-    "name": "Derek Michael Chauvin",
-    "bio": "Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”Khalil was charged with drug distribution after a traffic stop that he says was illegal from the start. He’s still fighting the case through appeals. In the meantime, he’s teaching himself Spanish and writes poetry to stay grounded. “The truth is simple,” he says. “I just want to be heard.”",
+    "id": "10",
+    "name": "Aimenn Penny",
+    "bio": "Jailed for exposing corruption.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/CHAUVIN_DEREK.PNG",
-    "state": "TX",
-    "mailing_address": "DEREK MICHAEL CHAUVIN #47849-509\nFCI Big Spring\nFEDERAL CORRECTIONAL INSTITUTION\n1900 SIMLER AVE\nBIG SPRING, TX   79720"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
+    "state": "WV",
+    "mailing_address": "AIMENN PENNY, 51942-510\nFCI Hazelton\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 5000\nBRUCETON MILLS, WV   26525"
   },
   {
-    "id": "21",
-    "name": "Matthew F. Hale",
-    "bio": "Arrested for human rights activism.",
+    "id": "24",
+    "name": "Tyler Eugene Tenbrink",
+    "bio": "Jailed for exposing corruption.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HALE_MATTHEW.PNG",
-    "state": "IL",
-    "mailing_address": "Matthew Hale\n15177-424\nFCI Marion\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nMARION, IL   62959"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/TENBRINK_TYLER.PNG",
+    "state": "FL",
+    "mailing_address": "Tenbrink, Tyler E., DC# G50325\nPO Box 23608\nTampa, FL 33623",
+    "facility_url": "https://pubapps.fdc.myflorida.com/OffenderSearch/Search.aspx?TypeSearch=AI"
   },
   {
-    "id": "27",
-    "name": "Travis McMichael",
-    "bio": "Sentenced for investigative journalism.",
+    "id": "13",
+    "name": "Richard Holzer",
+    "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_TRAVIS.PNG",
-    "state": "GA",
-    "mailing_address": "Travis McMichael #1003053360\nHays State Prison\n777 Underwood Drive\nTrion, GA 30753",
-    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HOLZER_RICHARD.PNG",
+    "state": "WV",
+    "mailing_address": "RICHARD HOLZER, 45531-013\nFCI GILMER\nFEDERAL CORRECTIONAL INSTITUTION\nPO BOX 6000\nGLENVILLE, WV   26351"
   }
 ]
