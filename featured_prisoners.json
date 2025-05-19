@@ -1,5 +1,23 @@
 [
   {
+    "id": "06",
+    "name": "William Alexander White",
+    "bio": "Held for whistleblowing.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/WHITE_WILLIAM.PNG",
+    "state": "MD",
+    "mailing_address": "William Alexander White #13888-084\nFCI CUMBERLAND\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nCUMBERLAND, MD   21501"
+  },
+  {
+    "id": "08",
+    "name": "Brian Mark Lemley Jr.",
+    "bio": "Imprisoned for speaking against injustice.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/LEMLEY_BRIAN.png",
+    "state": "NJ",
+    "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
+  },
+  {
     "id": "10",
     "name": "Aimenn Penny",
     "bio": "Jailed for exposing corruption.",
@@ -7,24 +25,5 @@
     "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
     "state": "WV",
     "mailing_address": "AIMENN PENNY, 51942-510\nFCI Hazelton\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 5000\nBRUCETON MILLS, WV   26525"
-  },
-  {
-    "id": "24",
-    "name": "Tyler Eugene Tenbrink",
-    "bio": "Jailed for exposing corruption.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/TENBRINK_TYLER.PNG",
-    "state": "FL",
-    "mailing_address": "Tenbrink, Tyler E., DC# G50325\nPO Box 23608\nTampa, FL 33623",
-    "facility_url": "https://pubapps.fdc.myflorida.com/OffenderSearch/Search.aspx?TypeSearch=AI"
-  },
-  {
-    "id": "13",
-    "name": "Richard Holzer",
-    "bio": "Convicted for social activism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HOLZER_RICHARD.PNG",
-    "state": "WV",
-    "mailing_address": "RICHARD HOLZER, 45531-013\nFCI GILMER\nFEDERAL CORRECTIONAL INSTITUTION\nPO BOX 6000\nGLENVILLE, WV   26351"
   }
 ]
