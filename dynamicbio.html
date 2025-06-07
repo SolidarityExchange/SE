@@ -58,7 +58,12 @@
     }
 
     if (prisoner.bio) {
-      html += `<p>${prisoner.bio}</p>`;
+const formattedBio = prisoner.bio
+  .split(/\n{2,}/) // Split by two or more line breaks for paragraphs
+  .map(para => `<p>${para.replace(/\n/g, "<br>")}</p>`) // Convert single line breaks inside each paragraph
+  .join("");
+
+html += formattedBio;
     }
 
     if (prisoner.state) {
