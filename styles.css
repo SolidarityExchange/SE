@@ -75,8 +75,8 @@ body {
 }
 
 #profile-container img {
-  max-width: 100%;
-  width: 300px;
+  width: 100%;              /* makes it scale with container */
+  max-width: 300px;         /* limits size on wider screens */
   height: auto;
   margin-bottom: 1rem;
   display: block;
