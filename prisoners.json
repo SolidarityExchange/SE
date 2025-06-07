@@ -21,7 +21,7 @@
   {
     "id": "03",
     "name": "Christopher Brenner Cook",
-    "bio": "Whistleblower detained for <a href="google.com">leaking</a> classified documents.",
+    "bio": "Whistleblower detained for <a href='google.com'>leaking</a> classified documents.",
     "profile_link": "#",
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
     "state": "SC",
