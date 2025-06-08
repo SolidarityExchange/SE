@@ -188,6 +188,16 @@ body {
     position: relative;
     z-index: 2;
 }
+/* --- Registry page only --- */
+.read-more {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+    text-decoration: none;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
 
 /* --- Grid Navigation --- */
 .grid-container {
