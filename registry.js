@@ -18,27 +18,52 @@ document.addEventListener("DOMContentLoaded", function () {
                 stateFilter.appendChild(option);
             });
 
-            // Escape HTML to prevent rendering issues
-            function escapeHTML(str) {
-                return str.replace(/[&<>'"]/g, tag => (
-                    {
-                        '&': '&amp;',
-                        '<': '&lt;',
-                        '>': '&gt;',
-                        "'": '&#39;',
-                        '"': '&quot;'
-                    }[tag]
-                ));
-            }
+            // Truncate HTML-rich bios without breaking tags
+            function truncateHTML(html, maxChars, readMoreLink) {
+                let div = document.createElement("div");
+                div.innerHTML = html;
 
-            // Format and truncate bios
-            function formatBio(bio, id) {
-                if (bio.length > 500) {
-                    const safeSnippet = escapeHTML(bio.substring(0, 500).trim());
-                    return `${safeSnippet}... <a href="dynamicbio.html?id=${id}" class="read-more">(Read more)</a>`;
-                } else {
-                    return escapeHTML(bio);
+                let totalChars = 0;
+                let stop = false;
+
+                function walk(node) {
+                    if (stop) return null;
+                    let clone = node.cloneNode(false);
+
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        if (totalChars + node.length > maxChars) {
+                            clone.textContent = node.textContent.slice(0, maxChars - totalChars) + "... ";
+                            stop = true;
+                        } else {
+                            clone.textContent = node.textContent;
+                        }
+                        totalChars += clone.textContent.length;
+                        return clone;
+                    }
+
+                    if (node.nodeType === Node.ELEMENT_NODE) {
+                        for (let child of node.childNodes) {
+                            let newChild = walk(child);
+                            if (newChild) clone.appendChild(newChild);
+                            if (stop) break;
+                        }
+                        return clone;
+                    }
+
+                    return null;
                 }
+
+                let result = walk(div);
+                if (result && readMoreLink) {
+                    let readMoreAnchor = document.createElement("a");
+                    readMoreAnchor.href = readMoreLink;
+                    readMoreAnchor.className = "read-more";
+                    readMoreAnchor.textContent = "(Read more)";
+                    result.appendChild(document.createTextNode(" "));
+                    result.appendChild(readMoreAnchor);
+                }
+
+                return result.innerHTML;
             }
 
             // Display prisoner cards
@@ -53,15 +78,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     const card = document.createElement("div");
                     card.classList.add("prisoner-card");
 
-                    const truncatedBio = formatBio(prisoner.bio, prisoner.id);
+                    const showLink = `dynamicbio.html?id=${prisoner.id}`;
+                    const bioHTML = prisoner.bio.length > 500
+                        ? truncateHTML(prisoner.bio, 500, showLink)
+                        : prisoner.bio;
 
                     card.innerHTML = `
-                        <a href="dynamicbio.html?id=${prisoner.id}" class="full-card-link"></a>
+                        <a href="${showLink}" class="full-card-link"></a>
                         <img src="${prisoner.image_url}" alt="${prisoner.name}">
                         <div class="prisoner-name">${prisoner.name}</div>
-                        <div class="prisoner-bio">${truncatedBio}</div>
+                        <div class="prisoner-bio">${bioHTML}</div>
                         <div class="prisoner-state">State: ${prisoner.state}</div>
-                        <a href="dynamicbio.html?id=${prisoner.id}" class="profile-link">View Profile →</a>
+                        <a href="${showLink}" class="profile-link">View Profile →</a>
                     `;
                     prisonersList.appendChild(card);
                 });
