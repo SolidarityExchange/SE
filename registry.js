@@ -18,23 +18,42 @@ document.addEventListener("DOMContentLoaded", function () {
                 stateFilter.appendChild(option);
             });
 
+            // Escape HTML to prevent rendering issues
+            function escapeHTML(str) {
+                return str.replace(/[&<>'"]/g, tag => (
+                    {
+                        '&': '&amp;',
+                        '<': '&lt;',
+                        '>': '&gt;',
+                        "'": '&#39;',
+                        '"': '&quot;'
+                    }[tag]
+                ));
+            }
+
+            // Format and truncate bios
+            function formatBio(bio, id) {
+                if (bio.length > 500) {
+                    const safeSnippet = escapeHTML(bio.substring(0, 500).trim());
+                    return `${safeSnippet}... <a href="dynamicbio.html?id=${id}" class="read-more">(Read more)</a>`;
+                } else {
+                    return escapeHTML(bio);
+                }
+            }
+
+            // Display prisoner cards
             function displayPrisoners(filteredData) {
                 prisonersList.innerHTML = "";
                 if (filteredData.length === 0) {
                     prisonersList.innerHTML = "<p>No prisoners found.</p>";
                     return;
                 }
-                
+
                 filteredData.forEach(prisoner => {
                     const card = document.createElement("div");
                     card.classList.add("prisoner-card");
 
-                    // Truncate bio to 500 characters
-const isTruncated = prisoner.bio.length > 489;
-const truncatedBio = isTruncated
-    ? prisoner.bio.substring(0, 489).trimEnd() + '... <span class="read-more">(Read more)</span>'
-    : prisoner.bio;
-
+                    const truncatedBio = formatBio(prisoner.bio, prisoner.id);
 
                     card.innerHTML = `
                         <a href="dynamicbio.html?id=${prisoner.id}" class="full-card-link"></a>
@@ -48,10 +67,10 @@ const truncatedBio = isTruncated
                 });
             }
 
-            // Display all prisoners on initial load
+            // Initial display
             displayPrisoners(data);
 
-            // Search & filter logic
+            // Filter logic
             function filterPrisoners() {
                 let searchValue = searchInput.value.toLowerCase();
                 let stateValue = stateFilter.value;
@@ -65,6 +84,7 @@ const truncatedBio = isTruncated
                 displayPrisoners(filteredData);
             }
 
+            // Event listeners
             searchInput.addEventListener("input", filterPrisoners);
             stateFilter.addEventListener("change", filterPrisoners);
         })
