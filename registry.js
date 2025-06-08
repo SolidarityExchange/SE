@@ -30,9 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     card.classList.add("prisoner-card");
 
                     // Truncate bio to 500 characters
-                    const truncatedBio = prisoner.bio.length > 500
-                        ? prisoner.bio.substring(0, 500) + "..."
-                        : prisoner.bio;
+const isTruncated = prisoner.bio.length > 489;
+const truncatedBio = isTruncated
+    ? prisoner.bio.substring(0, 489).trimEnd() + '... <span class="read-more">(Read more)</span>'
+    : prisoner.bio;
+
 
                     card.innerHTML = `
                         <a href="dynamicbio.html?id=${prisoner.id}" class="full-card-link"></a>
