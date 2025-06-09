@@ -1,30 +1,30 @@
 [
   {
-    "id": "28",
-    "name": "Hannah Payne",
-    "bio": "Charged for reporting war crimes.",
+    "id": "08",
+    "name": "Brian Mark Lemley Jr.",
+    "bio": "Imprisoned for speaking against injustice.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/PAYNE_HANNAH.PNG",
-    "state": "GA",
-    "mailing_address": "PAYNE, HANNAH RENEA\nGDC ID: 1003503764\n373 Upper River Road\nHawkinsville, GA 31036",
-    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/LEMLEY_BRIAN.png",
+    "state": "NJ",
+    "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
   },
   {
-    "id": "02",
-    "name": "Derek Michael Chauvin",
-    "bio": "bitch nigga.",
+    "id": "17",
+    "name": "Henry Lambert Baird",
+    "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/CHAUVIN_DEREK.PNG",
-    "state": "TX",
-    "mailing_address": "DEREK MICHAEL CHAUVIN #47849-509\nFCI Big Spring\nFEDERAL CORRECTIONAL INSTITUTION\n1900 SIMLER AVE\nBIG SPRING, TX   79720"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
+    "state": "PA",
+    "mailing_address": "Henry Lambert Baird\n#75744-067\nRRM Philadelphia\nRESIDENTIAL REENTRY OFFICE\n2ND & CHESTNUT ST - 7TH FL\nPHILADELPHIA, PA  19106",
+    "facility_url": "https://www.bop.gov/inmateloc/"
   },
   {
-    "id": "05",
-    "name": "Jacob Mark Robards",
-    "bio": "Journalist arrested for reporting on government abuses.",
+    "id": "11",
+    "name": "Christopher Paul Hasson",
+    "bio": "Sentenced for investigative journalism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/ROBARDS_JACOB.JPG",
-    "state": "FL",
-    "mailing_address": "JACOB MARK ROBARDS #75960-066\nFCI Coleman Medium\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1032\nCOLEMAN, FL   33521"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HASSON_CHRISTOPHER.PNG",
+    "state": "VA",
+    "mailing_address": "CHRISTOPHER PAUL HASSON # 64544-037\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nPETERSBURG, VA   23804"
   }
 ]
