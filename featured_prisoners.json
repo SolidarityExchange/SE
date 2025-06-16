@@ -1,14 +1,5 @@
 [
   {
-    "id": "08",
-    "name": "Brian Mark Lemley Jr.",
-    "bio": "Imprisoned for speaking against injustice.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/LEMLEY_BRIAN.png",
-    "state": "NJ",
-    "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
-  },
-  {
     "id": "17",
     "name": "Henry Lambert Baird",
     "bio": "Sentenced for investigative journalism.",
@@ -19,12 +10,22 @@
     "facility_url": "https://www.bop.gov/inmateloc/"
   },
   {
-    "id": "11",
-    "name": "Christopher Paul Hasson",
-    "bio": "Sentenced for investigative journalism.",
+    "id": "05",
+    "name": "Jacob Mark Robards",
+    "bio": "Journalist arrested for reporting on government abuses.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HASSON_CHRISTOPHER.PNG",
-    "state": "VA",
-    "mailing_address": "CHRISTOPHER PAUL HASSON # 64544-037\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nPETERSBURG, VA   23804"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/ROBARDS_JACOB.JPG",
+    "state": "FL",
+    "mailing_address": "JACOB MARK ROBARDS #75960-066\nFCI Coleman Medium\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1032\nCOLEMAN, FL   33521"
+  },
+  {
+    "id": "32",
+    "name": "Justen Michael Watkins",
+    "bio": "Imprisoned for speaking against injustice.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/WATKINS_JUSTEN.PNG",
+    "state": "MI",
+    "mailing_address": "Justen Michael Watkins, #707915\nOaks Correctional Facility\n1500 Caberfae Highway\nManistee, MI 49660",
+    "facility_url": "https://mdocweb.state.mi.us/OTIS2/otis2.aspx"
   }
 ]
