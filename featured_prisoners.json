@@ -10,22 +10,21 @@
     "facility_url": "https://www.bop.gov/inmateloc/"
   },
   {
-    "id": "05",
-    "name": "Jacob Mark Robards",
-    "bio": "Journalist arrested for reporting on government abuses.",
+    "id": "07",
+    "name": "Coby Dale Green",
+    "bio": "Detained for leading protests.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/ROBARDS_JACOB.JPG",
-    "state": "FL",
-    "mailing_address": "JACOB MARK ROBARDS #75960-066\nFCI Coleman Medium\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1032\nCOLEMAN, FL   33521"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/GREEN_COBY.PNG",
+    "state": "AR",
+    "mailing_address": "COBY DALE GREEN #64429-510\nFCI Forrest City Low\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 9000\nFORREST CITY, AR   72336"
   },
   {
-    "id": "32",
-    "name": "Justen Michael Watkins",
-    "bio": "Imprisoned for speaking against injustice.",
+    "id": "13",
+    "name": "Richard Holzer",
+    "bio": "Convicted for social activism.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/WATKINS_JUSTEN.PNG",
-    "state": "MI",
-    "mailing_address": "Justen Michael Watkins, #707915\nOaks Correctional Facility\n1500 Caberfae Highway\nManistee, MI 49660",
-    "facility_url": "https://mdocweb.state.mi.us/OTIS2/otis2.aspx"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HOLZER_RICHARD.PNG",
+    "state": "WV",
+    "mailing_address": "RICHARD HOLZER, 45531-013\nFCI GILMER\nFEDERAL CORRECTIONAL INSTITUTION\nPO BOX 6000\nGLENVILLE, WV   26351"
   }
 ]
