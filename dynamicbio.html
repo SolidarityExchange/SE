@@ -57,21 +57,20 @@
       html += `<img src="${prisoner.image_url}" alt="${prisoner.name}" style="max-width: 300px; margin-bottom: 1rem;">`;
     }
 
-    if (prisoner.bio) {
-const formattedBio = prisoner.bio
-  .split(/\n{2,}/) // Split by two or more line breaks for paragraphs
-  .map(para => `<p>${para.replace(/\n/g, "<br>")}</p>`) // Convert single line breaks inside each paragraph
-  .join("");
+    if (prisoner.mailing_address) {
+      html += `<p><strong>Mailing Address:</strong><br><span style="white-space: pre-line;">${prisoner.mailing_address}</span></p><br><br>`;
+    }
 
-html += formattedBio;
+    if (prisoner.bio) {
+      const formattedBio = prisoner.bio
+        .split(/\n{2,}/)
+        .map(para => `<p>${para.replace(/\n/g, "<br>")}</p>`)
+        .join("");
+      html += formattedBio;
     }
 
     if (prisoner.state) {
       html += `<p><strong>State:</strong> ${prisoner.state}</p>`;
-    }
-
-    if (prisoner.mailing_address) {
-      html += `<p><strong>Mailing Address:</strong><br><span style="white-space: pre-line;">${prisoner.mailing_address}</span></p>`;
     }
 
     // Check if federal
@@ -95,8 +94,7 @@ html += formattedBio;
   }
 
   loadProfile();
-</script>
-
+  </script>
 
   <div class="grid-container">
     <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
