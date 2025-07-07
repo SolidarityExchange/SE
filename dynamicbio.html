@@ -70,14 +70,14 @@
     }
 
     if (prisoner.state) {
-      html += `<p><strong>State:</strong> ${prisoner.state}</p>`;
+      html += `<br><p><strong>State:</strong> ${prisoner.state}</p>`;
     }
 
     // Check if federal
     const isFederal = /FEDERAL CORRECTIONAL INSTITUTION|U\.S\. PENITENTIARY/.test(prisoner.mailing_address);
 
     if (isFederal) {
-      html += `<p style="color: green;"><strong>FEDERAL DONATION INSTRUCTIONS GO HERE</strong></p>`;
+      html += `<br><p style="color: green;"><strong>FEDERAL DONATION INSTRUCTIONS GO HERE</strong></p>`;
     } else if (prisoner.facility_url) {
       html += `<p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
     }
