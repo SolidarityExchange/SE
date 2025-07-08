@@ -62,16 +62,7 @@
     "image_url": "https://solidarityexchange.github.io/SE/pictures/GREEN_COBY.PNG",
     "state": "AR",
     "mailing_address": "COBY DALE GREEN #64429-510\nFCI Forrest City Low\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 9000\nFORREST CITY, AR   72336"
-  },
-  {
-    "id": "08",
-    "name": "Brian Mark Lemley Jr.",
-    "bio": "Imprisoned for speaking against injustice.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/LEMLEY_BRIAN.png",
-    "state": "NJ",
-    "mailing_address": "BRIAN MARK LEMLEY #65228-037\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
-  },
+  },  
   {
     "id": "09",
     "name": "Justin Daniel Lough",
@@ -212,26 +203,6 @@
     "facility_url": "https://pubapps.fdc.myflorida.com/OffenderSearch/Search.aspx?TypeSearch=AI"
   },
   {
-    "id": "25",
-    "name": "Gregory McMichael",
-    "bio": "Jailed for exposing corruption.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_GREGORY.PNG",
-    "state": "GA",
-    "mailing_address": "GREGORY JOHNS MCMICHAEL #1003053181\nAUGUSTA STATE MED. PRISON\n3001 Gordon Hwy\nGrovetown, GA 30813",
-    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
-  },
-  {
-    "id": "26",
-    "name": "Jose Ismael Torres",
-    "bio": "Detained for political dissent.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/TORRES_JOSE.PNG",
-    "state": "GA",
-    "mailing_address": "Jose Ismael Torres #1001973704\nJefferson County Correctional Institution\n1159 Clarks Mill Road\nLouisville, GA 30434",
-    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
-  },
-  {
     "id": "27",
     "name": "Travis McMichael",
     "bio": "Sentenced for investigative journalism.",
@@ -239,16 +210,6 @@
     "image_url": "https://solidarityexchange.github.io/SE/pictures/MCMICHAEL_TRAVIS.PNG",
     "state": "GA",
     "mailing_address": "Travis McMichael #1003053360\nHays State Prison\n777 Underwood Drive\nTrion, GA 30753",
-    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
-  },
-  {
-    "id": "28",
-    "name": "Hannah Payne",
-    "bio": "Charged for reporting war crimes.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/PAYNE_HANNAH.PNG",
-    "state": "GA",
-    "mailing_address": "PAYNE, HANNAH RENEA\nGDC ID: 1003503764\n373 Upper River Road\nHawkinsville,\u00a0GA\u00a031036",
     "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
   },
   {
@@ -310,15 +271,5 @@
     "state": "PA",
     "mailing_address": "Smart Communications/PA DOC\nWILLIAM HENRY FEARS/QQ4688\nState Correctional Institution\nPO Box 33028\nSt. Petersburg, Florida 33733",
     "facility_url": "https://inmatelocator.cor.pa.gov/#/"
-  },
-  {
-    "id": "35",
-    "name": "Sophia Rosing",
-    "bio": "Held for whistleblowing.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
-    "state": "FL",
-    "mailing_address": "Smart Communications/Lexington-Fayette Co.\nSophia Rosing #191451\nPO Box 9198\nSeminole, FL 33775-9198",
-    "facility_url": "Inmate information | City of Lexington, Kentucky"
-  }
+  }, 
 ]
