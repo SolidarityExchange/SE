@@ -1,15 +1,5 @@
 [
   {
-    "id": "01",
-    "name": "Ryan McCann",
-    "bio": "Journalist imprisoned for exposing corruption.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
-    "state": "TN",
-    "mailing_address": "Ryan Scott McCann 627751\nNashville / Davidson County Sheriff\u2019s Office\nPO Box 196383\nNashville, TN 37219-6383",
-    "facility_url": "https://dcso.nashville.gov/Search/Details/1034861?searchType=Person"
-  },
-  {
     "id": "02",
     "name": "Michael John Helterbrand",
     "bio": "Michael is currently serving a <A HREF='https://www.south935.com/2021/11/19/two-more-plead-guilty-in-white-supremacist-murder-plot/'>40-year sentence</a> stemming from an FBI-manufactured plot targeting members of The Base’s Georgia cell.<br><br>According to <a href='https://archive.ph/S3bg1'><i>National Justice</i></a>, an undercover FBI agent persistently pushed Michael and others toward a planned act of violence, despite early reluctance and repeated delays by the group.<br><br>One of the now convicted members is Brian Mark Lemley. Lemley once confessed to having <a href='https://s3.documentcloud.org/documents/21095526/patrik-jordan-mathews-and-brian-mark-lemley-jr-sentencing-memorandum.pdf'>Jewish heritage</a>, which is cited in court documents. According to CBC’s <a href='https://www.youtube.com/watch?v=h655vCaRTGY'><i>The Fifth Estate</i></a>, the group had also been infiltrated by a journalist with the <i>Winnipeg Free Press</i> and a member of Antifa.<br><br>Just a few months into his decades-long detention, Michael began to rack up <a href='https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp'>additional time</a> for his association with prison ‘gangs.’ Floyd County Jail, where Helterbrand was originally detained at, is within <a href='https://www.census.gov/quickfacts/fact/table/'>White-minority</a> county and city.<br><br>Michael’s case reflects broader concerns about government entrapment tactics and the way the prison system can force vulnerable Whites further into a criminal underworld.",
@@ -46,24 +36,6 @@
     "mailing_address": "JACOB MARK ROBARDS #75960-066\nFCI Coleman Medium\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1032\nCOLEMAN, FL   33521"
   },
   {
-    "id": "06",
-    "name": "William Alexander White",
-    "bio": "Held for whistleblowing.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/WHITE_WILLIAM.PNG",
-    "state": "MD",
-    "mailing_address": "William Alexander White #13888-084\nFCI CUMBERLAND\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nCUMBERLAND, MD   21501"
-  },
-  {
-    "id": "07",
-    "name": "Coby Dale Green",
-    "bio": "Detained for leading protests.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/GREEN_COBY.PNG",
-    "state": "AR",
-    "mailing_address": "COBY DALE GREEN #64429-510\nFCI Forrest City Low\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 9000\nFORREST CITY, AR   72336"
-  },  
-  {
     "id": "09",
     "name": "Justin Daniel Lough",
     "bio": "Justin is currently serving a <a href='https://archive.ph/FSsvL'>12-year federal prison sentence</a> after being caught up in an FBI-orchestrated sting operation against members of the Aryan Strikeforce.<br><br><a href='https://archive.ph/FSsvL'><i>PennLive</i></a> reports that federal undercover employees initiated and directed the supposed \"drugs-for-guns\" conspiracy, providing imitation methamphetamine and scripting the entire plot from the beginning.<br><br>According to <a href='https://archive.ph/eerFN'><i>National Justice</i></a>, Lough challenged the charges in court by highlighting how the FBI conceived, supplied, and managed the operation, and further accused federal agents of bad faith after they claimed to have mistakenly destroyed critical audio evidence of their initial meeting with the group.<br><br>The prosecution targeted economically vulnerable individuals, including <a href='https://archive.ph/eerFN'>cancer-stricken</a>, disabled, and homeless co-defendant <a href='https://solidarityexchange.github.io/SE/dynamicbio.html?id=05'>Jacob Mark Robards</a>, further raising serious concerns about FBI entrapment tactics and the manufacturing of criminal conspiracies.",
@@ -80,33 +52,6 @@
     "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
     "state": "WV",
     "mailing_address": "AIMENN PENNY, 51942-510\nFCI Hazelton\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 5000\nBRUCETON MILLS, WV   26525"
-  },
-  {
-    "id": "11",
-    "name": "Christopher Paul Hasson",
-    "bio": "Sentenced for investigative journalism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HASSON_CHRISTOPHER.PNG",
-    "state": "VA",
-    "mailing_address": "CHRISTOPHER PAUL HASSON # 64544-037\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nPETERSBURG, VA   23804"
-  },
-  {
-    "id": "12",
-    "name": "Nicholas Welker",
-    "bio": "Held for whistleblowing.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
-    "state": "IN",
-    "mailing_address": "NICHOLAS WELKER #50093-510\nFCI Terre Haute\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 33\nTERRE HAUTE, IN   47808"
-  },
-  {
-    "id": "13",
-    "name": "Richard Holzer",
-    "bio": "Convicted for social activism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HOLZER_RICHARD.PNG",
-    "state": "WV",
-    "mailing_address": "RICHARD HOLZER, 45531-013\nFCI GILMER\nFEDERAL CORRECTIONAL INSTITUTION\nPO BOX 6000\nGLENVILLE, WV   26351"
   },
   {
     "id": "14",
@@ -155,24 +100,6 @@
     "mailing_address": "James Alex Fields\n#22239-084\nUSP Allenwood\nU.S. PENITENTIARY\nPO Box 3000\nWhite Deer, PA 17887"
   },
   {
-    "id": "19",
-    "name": "Adam Dean Fox",
-    "bio": "Arrested for human rights activism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/FOX_ADAM.PNG",
-    "state": "CO",
-    "mailing_address": "Adam Dean Fox\n11843-509\nUSP Florence ADMAX\nU.S. PENITENTIARY\nPO BOX 8500\nFLORENCE,\u00a0CO\u00a0\u00a0\u00a081226"
-  },
-  {
-    "id": "21",
-    "name": "Matthew F. Hale",
-    "bio": "Arrested for human rights activism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HALE_MATTHEW.PNG",
-    "state": "IL",
-    "mailing_address": "Matthew Hale\n15177-424\nFCI Marion\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nMARION,\u00a0IL\u00a0\u00a0\u00a062959"
-  },
-  {
     "id": "22",
     "name": "George D. Loeb Jr",
     "bio": "Held for whistleblowing.",
@@ -181,26 +108,6 @@
     "state": "FL",
     "mailing_address": "Loeb, George D JR., DC# 292124\nPO Box 23608\nTampa, FL 33623",
     "facility_url": "http://www.dc.state.fl.us/offenderSearch/detail.aspx?Page=Detail&DCNumber=292124&TypeSearch=AI"
-  },
-  {
-    "id": "23",
-    "name": "Dustin H Heathman",
-    "bio": "Sentenced for investigative journalism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HEATHMAN_DUSTIN.PNG",
-    "state": "FL",
-    "mailing_address": "Heathman, Dustin H., DC# 524936\nPO Box 23608\nTampa, FL 33623",
-    "facility_url": "https://fdc.myflorida.com/offenderSearch/detail.aspx?Page=Detail&DCNumber=524936&TypeSearch=AI"
-  },
-  {
-    "id": "24",
-    "name": "Tyler Eugene Tenbrink",
-    "bio": "Jailed for exposing corruption.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/TENBRINK_TYLER.PNG",
-    "state": "FL",
-    "mailing_address": "Tenbrink, Tyler E., DC# G50325\nPO Box 23608\nTampa, FL 33623",
-    "facility_url": "https://pubapps.fdc.myflorida.com/OffenderSearch/Search.aspx?TypeSearch=AI"
   },
   {
     "id": "27",
@@ -213,26 +120,6 @@
     "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp?Institution="
   },
   {
-    "id": "29",
-    "name": "William Bryan Jr.",
-    "bio": "Sentenced for investigative journalism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/BRYAN_WILLIAM.PNG",
-    "state": "GA",
-    "mailing_address": "William Roderick Bryan\nGDC ID: 1003053319\n3259 Valtech Road\nValdosta,\u00a0GA\u00a031601",
-    "facility_url": "https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp"
-  },
-  {
-    "id": "30",
-    "name": "Brandon Troy Higgs",
-    "bio": "Charged for reporting war crimes.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/HIGGS_BRANDON.PNG",
-    "state": "MD",
-    "mailing_address": "Brandon Troy Higgs, SID #4595997\nMaryland Correctional Training Center\n18800 Roxbury Road\nHagerstown, Maryland 21746",
-    "facility_url": "https://www.dpscs.state.md.us/inmate/search.do?searchType=detail&id=779325171"
-  },
-  {
     "id": "31",
     "name": "Brandon Clint Russell",
     "bio": "Brandon Russell is currently incarcerated—most recently in Maryland State Prison—after being <a href='https://www.courtlistener.com/docket/66811663/united-states-v-clendaniel/'>convicted of conspiracy</a> to damage an energy facility in an FBI-involved scheme.<br><br>Brandon will be sentenced in <a href='https://www.courtlistener.com/docket/66811663/united-states-v-clendaniel/'>August of 2025</a> and faces up to 20 years in prison.<br><br>The prosecution claimed that Brandon and his co-defendant and former lover, Sarah Clendaniel, would have done a whopping $75 million in damage to various power stations using only <a href='https://archive.ph/1YrDV'>guns and mylar balloons</a>.<br><br>Sarah, who pleaded guilty and received an 18-year sentence for her alleged role in the plot, was dying of kidney failure at the time of the sting.<br><br>Brandon would attempt to identify the government's confidential informants but his legal motions were defeated and he was convicted in February of 2025.<br><br>One of the anonymous witnesses would reveal that he had been paid $70,000 by the FBI during his four years as a per diem professional informant. One month after Russell was convicted, the government revealed the same witness had been paid an additional $7,000 that he failed to disclose. This payment was sent the week of jury selection.<br><br>Nevertheless, <a href='https://www.baltimoresun.com/2025/05/05/no-new-trial-for-white-supremacist-baltimore-grid/'>Judge James K. Bredar</a> did not think this sufficient to hold a new trial. The same judge had once dismissed a potential juror who claimed to be a racist, saying, &quot;you're excused. <a href='https://www.wbaltv.com/article/brandon-russell-trial-jury-plot-destroy-baltimore-power-grid/63574539'>We don't tolerate racist views in the justice system</a>.&quot;<br><br>During Brandon and Sarah’s legal proceedings, FBI Director Wray made a public speech where he said that the FBI used a warrantless <a href='https://www.thebaltimorebanner.com/community/criminal-justice/brandon-russell-neo-nazi-fisa-evidence-XG2FGX6RCNEY3BPKPHQ4O27SAA/'>Foreign Intelligence Surveillance Act</a> (or FISA) wiretap to disrupt a planned attack on the power grid that same year.<br><br>The defense suggested that Wray was referencing Brandon and Sarah’s case and thus, violated their rights. The prosecution dismissed this as speculative, refusing to confirm or deny the implication.<br><br>Despite the <a href='https://www.thebaltimorebanner.com/community/criminal-justice/brandon-russell-neo-nazi-fisa-evidence-XG2FGX6RCNEY3BPKPHQ4O27SAA/'>unexpected intervention</a> of the ACLU on Russell’s behalf, the government kept their secrets. In a private session with the prosecution, antiracist Judge Bredar agreed that Russell’s rights were protected and that the government did not use evidence from a FISA wiretap.",
@@ -241,26 +128,6 @@
     "state": "MD",
     "mailing_address": "Brandon Clint Russell, SID # 5348309\nChesapeake Detention Facility\n401 East Madison Street\nBaltimore, Maryland 21202",
     "facility_url": "https://www.dpscs.state.md.us/inmate/"
-  },
-  {
-    "id": "32",
-    "name": "Justen Michael Watkins",
-    "bio": "Imprisoned for speaking against injustice.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/WATKINS_JUSTEN.PNG",
-    "state": "MI",
-    "mailing_address": "Justen Michael Watkins, #707915\nOaks Correctional Facility\n1500 Caberfae Highway\nManistee, MI 49660",
-    "facility_url": "https://mdocweb.state.mi.us/OTIS2/otis2.aspx"
-  },
-  {
-    "id": "33",
-    "name": "Ian Mackenzie Cranston",
-    "bio": "Convicted for social activism.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/CRANSTON_IAN.PNG",
-    "state": "OR",
-    "mailing_address": "Ian Mackenzie Cranston\nSID#23824387\nSnake River Correctional Institution\n777 Stanton Blvd.\nOntario, Oregon 97914-8335",
-    "facility_url": "https://docpub.state.or.us/OOS/searchCriteria.jsf"
   },
   {
     "id": "34",
