@@ -111,7 +111,7 @@
     "mailing_address": "Smart Communications/PA DOC\nWILLIAM HENRY FEARS/QQ4688\nState Correctional Institution\nPO Box 33028\nSt. Petersburg, Florida 33733",
     "facility_url": "https://inmatelocator.cor.pa.gov/#/"
   },
-    {
+  {
     "id": "35",
     "name": "Nicholas Welker",
     "bio": "Whistleblower detained for <a href='https://www.google.com'>leaking</a> classified <a href='https://www.google.com'>documents.</a>",
@@ -119,5 +119,5 @@
     "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
     "state": "SC",
     "mailing_address": "NOT REAL \nFCI Bennettsville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 52020\nBENNETTSVILLE, SC   29512"
-  },
+  }
 ]
