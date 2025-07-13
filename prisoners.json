@@ -36,15 +36,6 @@
     "mailing_address": "JACOB MARK ROBARDS #75960-066\nFCI Coleman Medium\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1032\nCOLEMAN, FL   33521"
   },
   {
-    "id": "09",
-    "name": "Justin Daniel Lough",
-    "bio": "Justin is currently serving a <a href='https://archive.ph/FSsvL'>12-year federal prison sentence</a> after being caught up in an FBI-orchestrated sting operation against members of the Aryan Strikeforce.<br><br><a href='https://archive.ph/FSsvL'><i>PennLive</i></a> reports that federal undercover employees initiated and directed the supposed \"drugs-for-guns\" conspiracy, providing imitation methamphetamine and scripting the entire plot from the beginning.<br><br>According to <a href='https://archive.ph/eerFN'><i>National Justice</i></a>, Lough challenged the charges in court by highlighting how the FBI conceived, supplied, and managed the operation, and further accused federal agents of bad faith after they claimed to have mistakenly destroyed critical audio evidence of their initial meeting with the group.<br><br>The prosecution targeted economically vulnerable individuals, including <a href='https://archive.ph/eerFN'>cancer-stricken</a>, disabled, and homeless co-defendant <a href='https://solidarityexchange.github.io/SE/dynamicbio.html?id=05'>Jacob Mark Robards</a>, further raising serious concerns about FBI entrapment tactics and the manufacturing of criminal conspiracies.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/LOUGH_JUSTIN.PNG",
-    "state": "NJ",
-    "mailing_address": "JUSTIN DANIEL LOUGH #21783-084\nFCI Fort Dix\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 2000\nJOINT BASE MDL, NJ   08640"
-  },
-  {
     "id": "10",
     "name": "Aimenn Penny",
     "bio": "Jailed for exposing corruption.",
@@ -79,25 +70,6 @@
     "image_url": "https://solidarityexchange.github.io/SE/pictures/STEEVER_JOSHUA.PNG",
     "state": "NY",
     "mailing_address": "Joshua Michael Steever\n#75745-067\nFCI Otisville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nOTISVILLE, NY   10963"
-  },
-  {
-    "id": "17",
-    "name": "Henry Lambert Baird",
-    "bio": "Henry, former president of the Aryan Strikeforce, is serving a <a href='https://archive.ph/FSsvL'>14-year federal prison sentence</a> after being targeted in an FBI operation that manufactured a criminal conspiracy from the ground up.<br><br><a href='https://archive.ph/FSsvL'><i>PennLive</i></a> reports that undercover federal agents were heavily involved in every step of the alleged \"drugs-for-guns\" plot — providing fake methamphetamine, handling proceeds through staged gift card transactions, and directing the group's activities to simulate criminal conduct.<br><br>As <a href='https://archive.ph/eerFN'><i>National Justice</i></a> highlights, the FBI acted as both supplier and buyer, creating a conspiracy that would not have existed without government intervention.<br><br>According to <a href='https://archive.ph/eerFN'><i>National Justice</i></a>, Baird’s co-defendant, Justin Lough, challenged the charges in court by highlighting how the FBI conceived, supplied, and managed the operation, and further accused federal agents of bad faith after they claimed to have mistakenly destroyed critical audio evidence of their initial meeting with the group.<br><br>As is typical in these cases, the prosecution targeted economically vulnerable individuals — including a <a href='https://archive.ph/eerFN'>cancer-stricken</a>, disabled, and homeless co-defendant, <a href='https://solidarityexchange.github.io/SE/dynamicbio.html?id=05'>Jacob Mark Robards</a>. This further raises serious concerns about FBI entrapment tactics and the manufacturing of criminal conspiracies.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
-    "state": "PA",
-    "mailing_address": "Henry Lambert Baird\n#75744-067\nRRM Philadelphia\nRESIDENTIAL REENTRY OFFICE\n2ND & CHESTNUT ST - 7TH FL\nPHILADELPHIA,\u00a0PA\u00a0\u00a019106",
-    "facility_url": "https://www.bop.gov/inmateloc/"
-  },
-  {
-    "id": "18",
-    "name": "James Alex Fields",
-    "bio": "Detained for leading protests.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/FIELDS_JAMES.PNG",
-    "state": "PA",
-    "mailing_address": "James Alex Fields\n#22239-084\nUSP Allenwood\nU.S. PENITENTIARY\nPO Box 3000\nWhite Deer, PA 17887"
   },
   {
     "id": "22",
@@ -138,5 +110,14 @@
     "state": "PA",
     "mailing_address": "Smart Communications/PA DOC\nWILLIAM HENRY FEARS/QQ4688\nState Correctional Institution\nPO Box 33028\nSt. Petersburg, Florida 33733",
     "facility_url": "https://inmatelocator.cor.pa.gov/#/"
-  }
+  },
+    {
+    "id": "35",
+    "name": "Nicholas Welker",
+    "bio": "Whistleblower detained for <a href='https://www.google.com'>leaking</a> classified <a href='https://www.google.com'>documents.</a>",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
+    "state": "SC",
+    "mailing_address": "NOT REAL \nFCI Bennettsville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 52020\nBENNETTSVILLE, SC   29512"
+  },
 ]
