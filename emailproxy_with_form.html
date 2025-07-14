@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email-to-Letter Proxy --- The Solidarity Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar-container">
+    <div class="logo">
+            <a href="index.html"><img src="newlogotransparent.png" alt="Logo"></a>
+    </div>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      </a>
+      <a href="https://x.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+    
+<div class="featured-container" style="text-align: left;">
+  <h1>Email-to-Letter Proxy Service</h1>
+  <form id="proxyForm" method="POST" action="https://your-worker-name.workers.dev/send">
+    <label for="prisoner">Select a prisoner:</label>
+    <select id="prisoner" name="prisoner" required></select>
+
+    <br><br>
+
+    <label for="mailingAddress">Mailing Address:</label><br>
+    <textarea id="mailingAddress" name="mailingAddress" rows="5" readonly required></textarea>
+
+    <br><br>
+
+    <label for="moniker">Your Moniker (nickname or alias):</label><br>
+    <input type="text" id="moniker" name="moniker" required />
+
+    <br><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" required />
+
+    <br><br>
+
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="10" required></textarea>
+
+    <br><br>
+
+    <button type="submit">Send Proxy Letter</button>
+  </form>
+</div>
+
+<script>
+  const prisoners = [
+    {
+      "id": "03",
+      "name": "Nobody",
+      "mailing_address": "NOT REAL 
+FCI Bennettsville
+FEDERAL CORRECTIONAL INSTITUTION
+P.O. BOX 52020
+BENNETTSVILLE, SC   29512"
+    },
+    {
+      "id": "02",
+      "name": "Michael John Helterbrand",
+      "mailing_address": "NOT REAL #47849-509
+FCI Big Spring
+FEDERAL CORRECTIONAL INSTITUTION
+1900 SIMLER AVE
+BIG SPRING, TX   79720"
+    },
+    {
+      "id": "04",
+      "name": "Patrik Jordan Mathews",
+      "mailing_address": "PATRIK JORDAN MATHEWS: 65229-037
+FCI Bennettsville
+FEDERAL CORRECTIONAL INSTITUTION
+P.O. BOX 52020
+BENNETTSVILLE, SC   29512"
+    }
+  ];
+
+  const select = document.getElementById("prisoner");
+  const addressField = document.getElementById("mailingAddress");
+
+  prisoners.forEach(p => {
+    const option = document.createElement("option");
+    option.value = p.id;
+    option.textContent = p.name;
+    option.dataset.address = p.mailing_address;
+    select.appendChild(option);
+  });
+
+  select.addEventListener("change", () => {
+    const selected = select.options[select.selectedIndex];
+    addressField.value = selected.dataset.address || "";
+  });
+
+  if (select.options.length > 0) {
+    select.selectedIndex = 0;
+    select.dispatchEvent(new Event("change"));
+  }
+</script>
+</div>
+
+  <div class="grid-container">
+    <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
+    <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
+    <div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
+    <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
+  </div>
+
+</body>
+</html>
