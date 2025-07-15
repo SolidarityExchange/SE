@@ -29,12 +29,7 @@
       </p>
 
       <label for="prisoner">Choose a prisoner:</label><br>
-      <select id="prisoner" name="prisoner" onchange="generateMessage()" class="registry-search">
-        <option value="">— Select —</option>
-        <option value="John Smith">Smith, J. — USP Pollock</option>
-        <option value="Sarah Greene">Greene, S. — FCI Dublin</option>
-        <option value="Carlos Mendez">Mendez, C. — USP Victorville</option>
-      </select>
+      <select id="prisoner" name="prisoner" onchange="generateMessage()" class="registry-search"></select>
 
       <div id="output" class="about-text" style="display: none; margin-top: 1em; background-color: #f3f1e1; border-radius: 6px; padding: 1em; white-space: pre-line;"></div>
     </div>
@@ -48,12 +43,32 @@
   </div>
 
   <script>
+    let prisoners = [];
+
+    fetch('./prisoners.json')
+      .then(res => res.json())
+      .then(data => {
+        prisoners = data;
+        const select = document.getElementById("prisoner");
+
+        data.forEach(p => {
+          const option = document.createElement("option");
+          option.value = p.id;
+          option.textContent = `${p.name} — ${p.state}`;
+          select.appendChild(option);
+        });
+      })
+      .catch(err => {
+        console.error("Failed to load prisoners.json", err);
+      });
+
     function generateMessage() {
       const select = document.getElementById("prisoner");
       const output = document.getElementById("output");
-      const name = select.value;
+      const selectedId = select.value;
+      const prisoner = prisoners.find(p => p.id === selectedId);
 
-      if (!name) {
+      if (!prisoner) {
         output.style.display = "none";
         output.textContent = "";
         return;
@@ -62,14 +77,17 @@
       output.style.display = "block";
       output.textContent =
 `📧 SUBJECT LINE:
-Letter for ${name}
+Letter for ${prisoner.name}
 
 ✍️ BODY:
-Dear ${name},
+Dear ${prisoner.name},
 
 [Type your message here]
 
-— Your Name`;
+— Your Name
+
+📬 Mailing Address:
+${prisoner.mailing_address}`;
     }
   </script>
 
