@@ -1,90 +1,72 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Email-to-Letter Proxy --- The Solidarity Exchange</title>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Email-to-Letter Proxy --- The Solidarity Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 </head>
-<body>
-<div class="topbar-container">
-<div class="logo">
-<a href="index.html"><img alt="Logo" src="newlogotransparent.png"/></a>
-</div>
-<div class="social-links">
-<a href="https://facebook.com" target="_blank">
-<img alt="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"/>
-</a>
-<a href="https://x.com" target="_blank">
-<img alt="Twitter" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"/>
-</a>
-<a href="https://instagram.com" target="_blank">
-<img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"/>
-</a>
-<a href="https://linkedin.com" target="_blank">
-<img alt="LinkedIn" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"/>
-</a>
-</div>
-</div>
-<div class="content">
-<div class="featured-container" style="text-align: left;">
-<h1>Email-to-Letter Proxy Service</h1>
-<form action="https://your-worker-name.workers.dev/send" id="proxyForm" method="POST">
-<label for="prisoner">Select a prisoner:</label>
-<select id="prisoner" name="prisoner" required=""></select>
-<br/><br/>
-<label for="mailingAddress">Mailing Address:</label><br/>
-<textarea id="mailingAddress" name="mailingAddress" readonly="" required="" rows="5"></textarea>
-<br/><br/>
-<label for="moniker">Your Moniker (nickname or alias):</label><br/>
-<input id="moniker" name="moniker" required="" type="text"/>
-<br/><br/>
-<label for="email">Your Email:</label><br/>
-<input id="email" name="email" required="" type="email"/>
-<br/><br/>
-<label for="message">Your Message:</label><br/>
-<textarea id="message" name="message" required="" rows="10"></textarea>
-<br/><br/>
-<button type="submit">Send Proxy Letter</button>
-</form>
-</div>
+<body style="font-family: 'EB Garamond', serif; background-color: #fff8f0; margin: 0; padding: 0;">
 
-</div>
-<div class="grid-container">
-<div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
-<div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
-<div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
-<div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
-</div>
-<script>
-fetch('./prisoners.json')
-  .then(res => res.json())
-  .then(prisoners => {
-    const select = document.getElementById("prisoner");
-    const addressField = document.getElementById("mailingAddress");
+  <div class="topbar-container" style="display: flex; justify-content: space-between; align-items: center; background-color: #333; padding: 10px;">
+    <div class="logo">
+      <a href="index.html"><img alt="Logo" src="newlogotransparent.png" style="height: 40px;" /></a>
+    </div>
+    <div class="social-links" style="display: flex; gap: 10px;">
+      <a href="https://facebook.com" target="_blank"><img alt="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" style="height: 24px;" /></a>
+      <a href="https://x.com" target="_blank"><img alt="Twitter" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" style="height: 24px;" /></a>
+      <a href="https://instagram.com" target="_blank"><img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="height: 24px;" /></a>
+      <a href="https://linkedin.com" target="_blank"><img alt="LinkedIn" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="height: 24px;" /></a>
+    </div>
+  </div>
 
-    prisoners.forEach(p => {
-      const option = document.createElement("option");
-      option.value = p.id;
-      option.textContent = p.name;
-      option.dataset.address = p.mailing_address;
-      select.appendChild(option);
-    });
+  <div class="content" style="padding: 2em;">
+    <h1>Email-to-Letter Proxy Service</h1>
+    <p>If you'd like us to print and mail a letter to a prisoner, use the tool below to generate a message outline. You can copy and paste this into your preferred email provider (we recommend <a href="https://proton.me" target="_blank">ProtonMail</a> or <a href="https://tutanota.com" target="_blank">Tutanota</a> for privacy). Then send it to: <strong>letters@solidarityexchange.org</strong></p>
 
-    select.addEventListener("change", () => {
-      const selected = select.options[select.selectedIndex];
-      addressField.value = selected.dataset.address || "";
-    });
+    <label for="prisoner">Choose a prisoner:</label><br>
+    <select id="prisoner" name="prisoner" onchange="generateMessage()" style="background-color:#f3f1e1; padding: 0.5em; margin-top: 0.5em; font-size: 1em;">
+      <option value="">— Select —</option>
+      <option value="John Smith">Smith, J. — USP Pollock</option>
+      <option value="Sarah Greene">Greene, S. — FCI Dublin</option>
+      <option value="Carlos Mendez">Mendez, C. — USP Victorville</option>
+    </select>
 
-    if (select.options.length > 0) {
-      select.selectedIndex = 0;
-      select.dispatchEvent(new Event("change"));
+    <div id="output" style="display: none; margin-top: 1em; padding: 1em; background-color: #f3f1e1; border-radius: 6px; white-space: pre-line; font-size: 1em;"></div>
+  </div>
+
+  <div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; padding: 1em; background-color: #eee;">
+    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="registry.html">PRISONER REGISTRY</a></div>
+    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="support.html">SUPPORTING PRISONERS</a></div>
+    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="#">THE SOLIDARITY DISPATCH</a></div>
+    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="aboutus.html">ABOUT US</a></div>
+  </div>
+
+  <script>
+    function generateMessage() {
+      const select = document.getElementById("prisoner");
+      const output = document.getElementById("output");
+      const name = select.value;
+
+      if (!name) {
+        output.style.display = "none";
+        output.textContent = "";
+        return;
+      }
+
+      output.style.display = "block";
+      output.textContent = 
+`📧 SUBJECT LINE:
+Letter for ${name}
+
+✍️ BODY:
+Dear ${name},
+
+[Type your message here]
+
+— Your Name`;
     }
-  })
-  .catch(err => {
-    console.error("Failed to load prisoners.json", err);
-  });
-</script></body>
+  </script>
+
+</body>
 </html>
