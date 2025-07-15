@@ -5,41 +5,46 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Email-to-Letter Proxy --- The Solidarity Exchange</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="font-family: 'EB Garamond', serif; background-color: #fff8f0; margin: 0; padding: 0;">
+<body>
 
-  <div class="topbar-container" style="display: flex; justify-content: space-between; align-items: center; background-color: #333; padding: 10px;">
+  <div class="topbar-container">
     <div class="logo">
-      <a href="index.html"><img alt="Logo" src="newlogotransparent.png" style="height: 40px;" /></a>
+      <a href="index.html"><img alt="Logo" src="newlogotransparent.png" /></a>
     </div>
-    <div class="social-links" style="display: flex; gap: 10px;">
-      <a href="https://facebook.com" target="_blank"><img alt="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" style="height: 24px;" /></a>
-      <a href="https://x.com" target="_blank"><img alt="Twitter" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" style="height: 24px;" /></a>
-      <a href="https://instagram.com" target="_blank"><img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="height: 24px;" /></a>
-      <a href="https://linkedin.com" target="_blank"><img alt="LinkedIn" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="height: 24px;" /></a>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank"><img alt="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" /></a>
+      <a href="https://x.com" target="_blank"><img alt="Twitter" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" /></a>
+      <a href="https://instagram.com" target="_blank"><img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" /></a>
+      <a href="https://linkedin.com" target="_blank"><img alt="LinkedIn" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" /></a>
     </div>
   </div>
 
-  <div class="content" style="padding: 2em;">
-    <h1>Email-to-Letter Proxy Service</h1>
-    <p>If you'd like us to print and mail a letter to a prisoner, use the tool below to generate a message outline. You can copy and paste this into your preferred email provider (we recommend <a href="https://proton.me" target="_blank">ProtonMail</a> or <a href="https://tutanota.com" target="_blank">Tutanota</a> for privacy). Then send it to: <strong>letters@solidarityexchange.org</strong></p>
+  <div class="content">
+    <div class="featured-container">
+      <div class="featured-header">Email-to-Letter Proxy Service</div>
+      <p class="about-text">
+        If you'd like us to print and mail a letter to a prisoner, use the tool below to generate a message outline. You can copy and paste this into your preferred email provider. Some people choose services like ProtonMail or Tutanota, but please do your own research and use what feels safest to you. Send your message to: <strong>letters@solidarityexchange.org</strong>
+      </p>
 
-    <label for="prisoner">Choose a prisoner:</label><br>
-    <select id="prisoner" name="prisoner" onchange="generateMessage()" style="background-color:#f3f1e1; padding: 0.5em; margin-top: 0.5em; font-size: 1em;">
-      <option value="">— Select —</option>
-      <option value="John Smith">Smith, J. — USP Pollock</option>
-      <option value="Sarah Greene">Greene, S. — FCI Dublin</option>
-      <option value="Carlos Mendez">Mendez, C. — USP Victorville</option>
-    </select>
+      <label for="prisoner">Choose a prisoner:</label><br>
+      <select id="prisoner" name="prisoner" onchange="generateMessage()" class="registry-search">
+        <option value="">— Select —</option>
+        <option value="John Smith">Smith, J. — USP Pollock</option>
+        <option value="Sarah Greene">Greene, S. — FCI Dublin</option>
+        <option value="Carlos Mendez">Mendez, C. — USP Victorville</option>
+      </select>
 
-    <div id="output" style="display: none; margin-top: 1em; padding: 1em; background-color: #f3f1e1; border-radius: 6px; white-space: pre-line; font-size: 1em;"></div>
+      <div id="output" class="about-text" style="display: none; margin-top: 1em; background-color: #f3f1e1; border-radius: 6px; padding: 1em; white-space: pre-line;"></div>
+    </div>
   </div>
 
-  <div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; padding: 1em; background-color: #eee;">
-    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="registry.html">PRISONER REGISTRY</a></div>
-    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="support.html">SUPPORTING PRISONERS</a></div>
-    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="#">THE SOLIDARITY DISPATCH</a></div>
-    <div class="grid-item" style="background:#ddd; padding: 1em; text-align:center;"><a href="aboutus.html">ABOUT US</a></div>
+  <div class="grid-container">
+    <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
+    <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
+    <div class="grid-item"><a href="dispatch.html">THE SOLIDARITY DISPATCH</a></div>
+    <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
   </div>
 
   <script>
@@ -55,7 +60,7 @@
       }
 
       output.style.display = "block";
-      output.textContent = 
+      output.textContent =
 `📧 SUBJECT LINE:
 Letter for ${name}
 
