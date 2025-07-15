@@ -32,6 +32,14 @@
       <select id="prisoner" name="prisoner" onchange="generateMessage()" class="registry-search"></select>
 
       <div id="output" class="about-text" style="display: none; margin-top: 1em; background-color: #f3f1e1; border-radius: 6px; padding: 1em; white-space: pre-line;"></div>
+
+      <button id="copyBtn" style="margin-top: 10px; padding: 8px 14px; font-size: 1em; background-color: #222; color: white; border: none; border-radius: 5px; cursor: pointer; display: none;">
+        Copy to Clipboard
+      </button>
+
+      <div id="copyConfirm" style="display: none; margin-top: 10px; color: green; font-weight: bold;">
+        ✅ Copied!
+      </div>
     </div>
   </div>
 
@@ -50,12 +58,30 @@
       .then(data => {
         prisoners = data;
         const select = document.getElementById("prisoner");
+        const output = document.getElementById("output");
+        const copyBtn = document.getElementById("copyBtn");
 
-        data.forEach(p => {
+        // Populate dropdown
+        data.forEach((p, index) => {
           const option = document.createElement("option");
           option.value = p.id;
           option.textContent = `${p.name} — ${p.state}`;
           select.appendChild(option);
+        });
+
+        // Auto-select first prisoner and show message
+        if (select.options.length > 0) {
+          select.selectedIndex = 0;
+          generateMessage();
+        }
+
+        copyBtn.addEventListener("click", () => {
+          const text = output.textContent;
+          navigator.clipboard.writeText(text).then(() => {
+            const confirm = document.getElementById("copyConfirm");
+            confirm.style.display = "block";
+            setTimeout(() => { confirm.style.display = "none"; }, 2000);
+          });
         });
       })
       .catch(err => {
@@ -65,16 +91,19 @@
     function generateMessage() {
       const select = document.getElementById("prisoner");
       const output = document.getElementById("output");
+      const copyBtn = document.getElementById("copyBtn");
       const selectedId = select.value;
       const prisoner = prisoners.find(p => p.id === selectedId);
 
       if (!prisoner) {
         output.style.display = "none";
+        copyBtn.style.display = "none";
         output.textContent = "";
         return;
       }
 
       output.style.display = "block";
+      copyBtn.style.display = "inline-block";
       output.textContent =
 `📧 SUBJECT LINE:
 Letter for ${prisoner.name}
