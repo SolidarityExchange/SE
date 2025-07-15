@@ -102,16 +102,6 @@
     "facility_url": "https://www.dpscs.state.md.us/inmate/"
   },
   {
-    "id": "34",
-    "name": "William Henry Fears",
-    "bio": "Held for whistleblowing.",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/FEARS_WILLIAM.PNG",
-    "state": "PA",
-    "mailing_address": "Smart Communications/PA DOC\nWILLIAM HENRY FEARS/QQ4688\nState Correctional Institution\nPO Box 33028\nSt. Petersburg, Florida 33733",
-    "facility_url": "https://inmatelocator.cor.pa.gov/#/"
-  },
-  {
     "id": "35",
     "name": "Nicholas Welker",
     "bio": "Whistleblower detained for <a href='https://www.google.com'>leaking</a> classified <a href='https://www.google.com'>documents.</a>",
