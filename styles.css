@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 }
 
 .topbar-container {
-    z-index: 1000; /* Ensures it's above everything */
+    z-index: 1000;
     width: 100%;
     background: #222;
     color: white;
@@ -20,7 +21,6 @@
     padding: 15px 0;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
 }
-
 
 .logo {
     display: flex;
@@ -45,13 +45,12 @@
     filter: grayscale(100%) contrast(200%);
 }
 
-
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
-    padding-top: 120px; /* Make sure content doesn't slide under top bar */
+    padding-top: 120px;
     position: relative;
 }
 
@@ -71,22 +70,22 @@ body {
 }
 
 .registry-search {
-    margin-bottom: 20px; /* Adds space below the search bar */
+    margin-bottom: 20px;
 }
 
 #profile-container img {
-  width: 100%;              /* makes it scale with container */
-  max-width: 300px;         /* limits size on wider screens */
-  height: auto;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #profile-container h1 {
-  text-align: center;
-  margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .featured-container {
@@ -98,9 +97,9 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
-    margin-top: 20px; /* Ensures spacing */
+    margin-top: 20px;
     position: relative;
-    z-index: 2; /* Keeps it above background layers */
+    z-index: 2;
 }
 
 .featured-header {
@@ -188,7 +187,7 @@ body {
     position: relative;
     z-index: 2;
 }
-/* --- Registry page only --- */
+
 .read-more {
     font-style: italic;
     font-size: 0.9em;
@@ -202,7 +201,7 @@ body {
 /* --- Grid Navigation --- */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 100%;
     margin-bottom: 50px;
@@ -250,48 +249,46 @@ body {
     border-radius: 5px;
 }
 
-/* --- Grid Item Background Images --- */
 .grid-item:nth-child(1) { background-image: url('prisonerregistry.jpg'); }
 .grid-item:nth-child(2) { background-image: url('prisonersupport.bmp'); }
 .grid-item:nth-child(3) { background-image: url('dispatchtransparent.jpg'); }
 .grid-item:nth-child(4) { background-image: url('newlogobwbkgdtransparent.png'); }
 
-/* --- Responsive Fixes --- */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 item per row */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 .sliced-button-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 40px auto;
-  max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 900px;
 }
 
 .sliced-button {
-  display: block;
-  width: 300px;
-  height: 768px;
-  background-image: url('support_buttons_resized.png');
-  background-size: 900px 768px;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
+    display: block;
+    width: 300px;
+    height: 768px;
+    background-image: url('support_buttons_resized.png');
+    background-size: 900px 768px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
 }
 
 .sliced-button:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .sliced-button.write  { background-position: left top; }
@@ -299,51 +296,52 @@ body {
 .sliced-button.find   { background-position: right top; }
 
 @media (max-width: 960px) {
-  .sliced-button {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    aspect-ratio: 300 / 768;
-    background-size: cover;
-  }
+    .sliced-button {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 300 / 768;
+        background-size: cover;
+    }
+}
+
 /* --- Support Page Grid Buttons --- */
 .support-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 15px;
-  margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
 }
 
 .support-item {
-  position: relative;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .support-item::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .support-item a {
-  position: relative;
-  z-index: 2;
-  font-size: 1.3em;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-align: center;
-}
+    position: relative;
+    z-index: 2;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
 }
