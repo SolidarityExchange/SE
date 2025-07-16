@@ -63,9 +63,9 @@ body {
     font-size: 1em;
     line-height: 1.6;
     text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 20px;
+    max-width: none;        /* removes width restriction */
+    margin: 0;              /* removes horizontal centering */
+    padding: 10px 0;        /* tighten up side spacing */
     color: #333;
 }
 
