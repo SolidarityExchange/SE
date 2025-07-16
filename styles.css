@@ -373,6 +373,16 @@ body {
     font-style: italic;
 }
 
+/* --- about page --- */
+
+.featured-container.about-page {
+  text-align: left;
+}
+
+.about-page .about-text {
+  text-align: left;
+}
+
 .logo a {
     display: block;
     line-height: 0;
