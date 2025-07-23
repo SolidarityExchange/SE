@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-  <body>
+<body>
 
   <div class="topbar-container">
     <div class="logo">
@@ -23,11 +23,22 @@
   <div class="content">
     <div class="featured-container">
       <div class="featured-header">Email-to-Letter Proxy Service</div>
+
       <p class="about-text">
-        If you'd like us to print and mail a letter to a prisoner, use the tool below to generate a message outline. You can copy and paste this into your preferred email provider. Some people choose services like ProtonMail or Tutanota, but please do your own research and use what feels safest to you. Send your message to: <strong>letters@solidarityexchange.org</strong>
+        To begin, use the dropdown below to choose a prisoner. Then use the auto-generated text to write your email. You’ll copy and paste this message into your email client and send it to: <strong>letters@solidarityexchange.org</strong>
       </p>
 
-      <label for="prisoner">Choose a prisoner:</label><br>
+      <p class="about-text">
+        We strongly recommend using a consistent alias, moniker, or name across all your letters to help the recipient recognize you across multiple messages. It builds trust and continuity.
+      </p>
+
+      <p class="about-text">
+        Not sure what to say? <a href="idk.html" class="read-more">Click here for writing tips</a>.
+      </p>
+
+      <p class="about-text"><a href="#generator" class="read-more">Jump to the email outline generator ↓</a></p>
+
+      <label for="prisoner" id="generator">Choose a prisoner:</label><br>
       <select id="prisoner" name="prisoner" onchange="generateMessage()" class="registry-search"></select>
 
       <div id="output" class="about-text" style="display: none; margin-top: 1em; background-color: #f3f1e1; border-radius: 6px; padding: 1em; white-space: pre-line;"></div>
@@ -49,16 +60,17 @@
     <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
   </div>
 
-            <div class="social-links">
-            <a href="https://gab.com/SolidarityExchange" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png" alt="Gab">
-            </a>
-            <a href="https://x.com/SE_NoConditions" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X/Twitter">
-            </a>
-            <a href="https://t.me/SolidarityExchange" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" alt="Telegram">
-        </div>
+  <div class="social-links">
+    <a href="https://gab.com/SolidarityExchange" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png" alt="Gab">
+    </a>
+    <a href="https://x.com/SE_NoConditions" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X/Twitter">
+    </a>
+    <a href="https://t.me/SolidarityExchange" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" alt="Telegram">
+    </a>
+  </div>
 
   <script>
     let prisoners = [];
@@ -129,6 +141,6 @@ Dear ${prisoner.name},
 ${prisoner.mailing_address}`;
     }
   </script>
-</body>
 
+</body>
 </html>
