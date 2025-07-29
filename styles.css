@@ -387,3 +387,24 @@ body {
     display: block;
     line-height: 0;
 }
+
+/* --- dispatch page --- */
+
+.dispatch-list {
+    text-align: left;
+}
+
+.dispatch-list ul {
+    padding-left: 20px; /* gives space for bullets */
+    list-style-position: outside;
+}
+
+.dispatch-list li {
+    margin-bottom: 5px;
+}
+
+.dispatch-list a {
+    text-align: left;
+    display: inline-block; /* keeps links from auto-centering */
+}
+
