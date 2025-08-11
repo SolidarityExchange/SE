@@ -258,7 +258,7 @@ body {
 }
 
 .grid-item:nth-child(1) { background-image: url('prisonerregistry.jpg'); }
-.grid-item:nth-child(2) { background-image: url('prisonersupport.bmp'); }
+.grid-item:nth-child(2) { background-image: url('support.png'); }
 .grid-item:nth-child(3) { background-image: url('dispatchtransparent.jpg'); }
 .grid-item:nth-child(4) { background-image: url('newlogobwbkgdtransparent.png'); }
 
@@ -407,4 +407,5 @@ body {
     text-align: left;
     display: inline-block; /* keeps links from auto-centering */
 }
+
 
