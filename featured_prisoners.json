@@ -1,14 +1,5 @@
 [
   {
-    "id": "36",
-    "name": "Coby Green",
-    "bio": "Whistleblower detained for <a href='https://www.google.com'>leaking</a> classified <a href='https://www.google.com'>documents.</a>",
-    "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/BLANK.png",
-    "state": "SC",
-    "mailing_address": "NOT REAL \nFCI Bennettsville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 52020\nBENNETTSVILLE, SC   29512"
-  },
-  {
     "id": "35",
     "name": "Nicholas Welker",
     "bio": "Whistleblower detained for <a href='https://www.google.com'>leaking</a> classified <a href='https://www.google.com'>documents.</a>",
@@ -18,13 +9,21 @@
     "mailing_address": "NOT REAL \nFCI Bennettsville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 52020\nBENNETTSVILLE, SC   29512"
   },
   {
-    "id": "22",
-    "name": "George D. Loeb Jr",
-    "bio": "Held for whistleblowing.",
+    "id": "02",
+    "name": "Michael John Helterbrand",
+    "bio": "Michael is currently serving a <A HREF='https://www.south935.com/2021/11/19/two-more-plead-guilty-in-white-supremacist-murder-plot/'>40-year sentence</a> stemming from an FBI-manufactured plot targeting members of The Base’s Georgia cell.<br><br>According to <a href='https://archive.ph/S3bg1'><i>National Justice</i></a>, an undercover FBI agent persistently pushed Michael and others toward a planned act of violence, despite early reluctance and repeated delays by the group.<br><br>One of the now convicted members is Brian Mark Lemley. Lemley once confessed to having <a href='https://s3.documentcloud.org/documents/21095526/patrik-jordan-mathews-and-brian-mark-lemley-jr-sentencing-memorandum.pdf'>Jewish heritage</a>, which is cited in court documents. According to CBC’s <a href='https://www.youtube.com/watch?v=h655vCaRTGY'><i>The Fifth Estate</i></a>, the group had also been infiltrated by a journalist with the <i>Winnipeg Free Press</i> and a member of Antifa.<br><br>Just a few months into his decades-long detention, Michael began to rack up <a href='https://services.gdc.ga.gov/GDC/OffenderQuery/jsp/OffQryForm.jsp'>additional time</a> for his association with prison ‘gangs.’ Floyd County Jail, where Helterbrand was originally detained at, is within <a href='https://www.census.gov/quickfacts/fact/table/'>White-minority</a> county and city.<br><br>Michael’s case reflects broader concerns about government entrapment tactics and the way the prison system can force vulnerable Whites further into a criminal underworld.",
     "profile_link": "#",
-    "image_url": "https://solidarityexchange.github.io/SE/pictures/LOEB_GEORGE.PNG",
-    "state": "FL",
-    "mailing_address": "Loeb, George D JR., DC# 292124\nPO Box 23608\nTampa, FL 33623",
-    "facility_url": "http://www.dc.state.fl.us/offenderSearch/detail.aspx?Page=Detail&DCNumber=292124&TypeSearch=AI"
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/HELTERBRAND_MICHAEL.jpg",
+    "state": "TX",
+    "mailing_address": "NOT REAL #47849-509\nFCI Big Spring\nFEDERAL CORRECTIONAL INSTITUTION\n1900 SIMLER AVE\nBIG SPRING, TX   79720"
+  },
+  {
+    "id": "10",
+    "name": "Aimenn Penny",
+    "bio": "Jailed for exposing corruption.",
+    "profile_link": "#",
+    "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
+    "state": "WV",
+    "mailing_address": "AIMENN PENNY, 51942-510\nFCI Hazelton\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 5000\nBRUCETON MILLS, WV   26525"
   }
 ]
