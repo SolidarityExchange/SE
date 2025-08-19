@@ -21,9 +21,6 @@
 
   <div class="content">
     <div class="featured-container" style="text-align: left;">
-
-      <p><a href="registry.html">Return to registry</a></p>
-      
       <div id="profile-container"></div>
     </div>
   </div>
@@ -83,13 +80,14 @@
       html += `<p><a href="${prisoner.profile_link}">More info</a></p>`;
     }
 
+    // Add return link inside the white box
+    html += `<p><a href="registry.html">Return to registry</a></p>`;
+
     container.innerHTML = html;
   }
 
   loadProfile();
   </script>
-
-  <p><a href="registry.html">Return to registry</a></p>
 
     <div class="grid-container">
     <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
