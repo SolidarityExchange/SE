@@ -41,7 +41,10 @@
       return;
     }
 
-    let html = `<h1>${prisoner.name || "Unnamed Prisoner"}</h1>`;
+    // Add return link at the top (before prisoner name)
+    let html = `<p><a href="registry.html">Return to registry</a></p>`;
+
+    html += `<h1>${prisoner.name || "Unnamed Prisoner"}</h1>`;
 
     if (prisoner.image_url) {
       html += `<img src="${prisoner.image_url}" alt="${prisoner.name}" style="max-width: 300px; margin-bottom: 1rem;">`;
@@ -80,7 +83,7 @@
       html += `<p><a href="${prisoner.profile_link}">More info</a></p>`;
     }
 
-    // Add return link inside the white box
+    // Add return link at the bottom (inside white box)
     html += `<p><a href="registry.html">Return to registry</a></p>`;
 
     container.innerHTML = html;
