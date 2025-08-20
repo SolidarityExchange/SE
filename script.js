@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://solidarityexchange.github.io/SE/featured_prisoners.json")
+    fetch("/featured_prisoners.json")
         .then(response => response.json())
         .then(data => {
             const prisonersList = document.getElementById("prisoners-list");
@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error loading prisoner data:", error));
 });
+
