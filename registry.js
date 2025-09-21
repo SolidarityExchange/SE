@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("prisoners.json")
+    fetch("temp_prisoners.json")
         .then(response => response.json())
         .then(data => {
             const prisonersList = document.getElementById("prisoners-list");
@@ -118,3 +118,4 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error loading prisoner data:", error));
 });
+
