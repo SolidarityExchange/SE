@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Email-to-Letter Proxy --- The Solidarity Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="topbar-container">
+    <div class="logo">
+      <a href="index.html"><img src="newlogotransparent.png" alt="Logo"></a>
+      <div class="logo-caption">
+        <strong>The Solidarity Exchange</strong><br>
+        <span>We extend solidarity without conditions.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="featured-container">
+      <div class="featured-header">Email-to-Letter Proxy Service</div>
+
+      <p class="about-text">
+        To begin, use the dropdown below to choose a prisoner. Then use the auto-generated text to write your email. You’ll copy and paste this message into your email client and send it to: <strong>letters@solidarityexchange.org</strong>
+      </p>
+
+      <p class="about-text">
+      We strongly recommend using a consistent alias, moniker, or name across all your letters to help the recipient recognize you across multiple messages.
+      </p>
+
+      <p class="about-text">
+      <b>In each individual thread, it is required.</b>
+      </p>
+      
+      <p class="about-text">
+      This process is done in order to build trust and continuity.
+      </p>
+
+      <p class="about-text">
+        Not sure what to say? <a href="idk.html" class="read-more">Click here for writing tips</a>.
+      </p>
+
+     
+      <label for="prisoner" id="generator">Choose a prisoner:</label><br>
+      <select id="prisoner" name="prisoner" onchange="generateMessage()" class="registry-search"></select>
+
+      <div id="output" class="about-text" style="display: none; margin-top: 1em; background-color: #f3f1e1; border-radius: 6px; padding: 1em; white-space: pre-line;"></div>
+
+      <button id="copyBtn" style="margin-top: 10px; padding: 8px 14px; font-size: 1em; background-color: #222; color: white; border: none; border-radius: 5px; cursor: pointer; display: none;">
+        Copy to Clipboard
+      </button>
+
+      <div id="copyConfirm" style="display: none; margin-top: 10px; color: green; font-weight: bold;">
+        ✅ Copied!
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
+    <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
+    <div class="grid-item"><a href="dispatch.html">THE SOLIDARITY DISPATCH</a></div>
+    <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
+  </div>
+
+  <div class="social-links">
+    <a href="https://gab.com/SolidarityExchange" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png" alt="Gab">
+    </a>
+    <a href="https://x.com/SE_NoConditions" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X/Twitter">
+    </a>
+    <a href="https://t.me/SolidarityExchange" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" alt="Telegram">
+    </a>
+  </div>
+
+  <script>
+    let prisoners = [];
+
+    fetch('./prisoners.json')
+      .then(res => res.json())
+      .then(data => {
+        prisoners = data;
+        const select = document.getElementById("prisoner");
+        const output = document.getElementById("output");
+        const copyBtn = document.getElementById("copyBtn");
+
+        // Populate dropdown
+        data.forEach((p, index) => {
+          const option = document.createElement("option");
+          option.value = p.id;
+          option.textContent = `${p.name} — ${p.state}`;
+          select.appendChild(option);
+        });
+
+        // Auto-select first prisoner and show message
+        if (select.options.length > 0) {
+          select.selectedIndex = 0;
+          generateMessage();
+        }
+
+        copyBtn.addEventListener("click", () => {
+          const text = output.textContent;
+          navigator.clipboard.writeText(text).then(() => {
+            const confirm = document.getElementById("copyConfirm");
+            confirm.style.display = "block";
+            setTimeout(() => { confirm.style.display = "none"; }, 2000);
+          });
+        });
+      })
+      .catch(err => {
+        console.error("Failed to load prisoners.json", err);
+      });
+
+    function generateMessage() {
+      const select = document.getElementById("prisoner");
+      const output = document.getElementById("output");
+      const copyBtn = document.getElementById("copyBtn");
+      const selectedId = select.value;
+      const prisoner = prisoners.find(p => p.id === selectedId);
+
+      if (!prisoner) {
+        output.style.display = "none";
+        copyBtn.style.display = "none";
+        output.textContent = "";
+        return;
+      }
+
+      output.style.display = "block";
+      copyBtn.style.display = "inline-block";
+      output.textContent =
+`📧 SUBJECT LINE:
+Letter for ${prisoner.name}
+
+✍️ BODY:
+Dear ${prisoner.name},
+
+[Type your message here]
+
+— Your Name
+
+📬 Mailing Address:
+${prisoner.mailing_address}`;
+    }
+  </script>
+
+</body>
+</html>

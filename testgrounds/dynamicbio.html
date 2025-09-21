@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prisoner Registry --- The Solidarity Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar-container">
+    <div class="logo">
+      <a href="index.html"><img src="newlogotransparent.png" alt="Logo"></a>
+      <div class="logo-caption">
+        <strong>The Solidarity Exchange</strong><br>
+        <span>We extend solidarity without conditions.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="featured-container" style="text-align: left;">
+      <div id="profile-container"></div>
+    </div>
+  </div>
+
+   <script>
+  async function loadProfile() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    const res = await fetch('prisoners.json');
+    const prisoners = await res.json();
+
+    const prisoner = prisoners.find(p => p.id === id);
+    const container = document.getElementById('profile-container');
+
+    if (!prisoner) {
+      container.innerHTML = "<p>Profile not found.</p>";
+      return;
+    }
+
+    // Add return link at the top (before prisoner name)
+    let html = `<br><p><a href="registry.html">Return to registry</a></p><br>`;
+
+    html += `<h1>${prisoner.name || "Unnamed Prisoner"}</h1>`;
+
+    if (prisoner.image_url) {
+      html += `<img src="${prisoner.image_url}" alt="${prisoner.name}" style="max-width: 300px; margin-bottom: 1rem;">`;
+    }
+
+    if (prisoner.mailing_address) {
+      html += `<p><strong>Mailing Address:</strong><br><span style="white-space: pre-line;">${prisoner.mailing_address}</span></p><br>`;
+    }
+
+    if (prisoner.bio) {
+      const formattedBio = prisoner.bio
+        .split(/\n{2,}/)
+        .map(para => `<p>${para.replace(/\n/g, "<br>")}</p>`)
+        .join("");
+      html += formattedBio;
+    }
+
+    if (prisoner.state) {
+      html += `<br><p><strong>State:</strong> ${prisoner.state}</p>`;
+    }
+
+    // Check if federal
+    const isFederal = /FEDERAL CORRECTIONAL INSTITUTION|U\.S\. PENITENTIARY/.test(prisoner.mailing_address);
+
+    if (isFederal) {
+      html += `<br><p style="color: green;"><strong>FEDERAL DONATION INSTRUCTIONS GO HERE</strong></p>`;
+    } else if (prisoner.facility_url) {
+      html += `<br><p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
+    }
+
+    if (prisoner.moneyGram) {
+      html += `<p><strong>MoneyGram:</strong> ${prisoner.moneyGram}</p>`;
+    }
+
+    if (prisoner.profile_link && prisoner.profile_link !== "#") {
+      html += `<p><a href="${prisoner.profile_link}">More info</a></p>`;
+    }
+
+    // Add return link at the bottom (inside white box)
+    html += `<p><a href="registry.html">Return to registry</a></p>`;
+
+    container.innerHTML = html;
+  }
+
+  loadProfile();
+  </script>
+
+    <div class="grid-container">
+    <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
+    <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
+    <div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
+    <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
+  </div>
+
+            <div class="social-links">
+            <a href="https://gab.com/SolidarityExchange" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png" alt="Gab">
+            </a>
+            <a href="https://x.com/SE_NoConditions" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X/Twitter">
+            </a>
+            <a href="https://t.me/SolidarityExchange" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" alt="Telegram">
+        </div>
+
+</body>
+</html>

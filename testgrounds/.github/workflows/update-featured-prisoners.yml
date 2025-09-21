@@ -1,0 +1,39 @@
+name: Update Featured Prisoners Weekly
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Runs every Monday at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update_prisoners:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Grants permission to push changes
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Required Packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq coreutils
+
+      - name: Select Random Prisoners
+        run: |
+          jq -c 'to_entries | map(.value) | .[]' prisoners.json | shuf -n 3 | jq -s '.' > featured_prisoners.json
+
+      - name: Force Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+
+          # Add a timestamp to force Git to detect a change
+          date > timestamp.txt
+          
+          git add featured_prisoners.json timestamp.txt
+          git commit -m "Updated weekly featured prisoners with forced change" || exit 0
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main --force
