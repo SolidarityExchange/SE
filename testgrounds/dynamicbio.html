@@ -1,31 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prisoner Registry --- The Solidarity Exchange</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prisoner Registry --- The Solidarity Exchange</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <div class="topbar-container">
-    <div class="logo">
-      <a href="index.html"><img src="newlogotransparent.png" alt="Logo"></a>
-      <div class="logo-caption">
-        <strong>The Solidarity Exchange</strong><br>
-        <span>We extend solidarity without conditions.</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="content">
-    <div class="featured-container" style="text-align: left;">
-      <div id="profile-container"></div>
-    </div>
-  </div>
-
-   <script>
+<div class="topbar-container">
+<div class="logo">
+<a href="index.html"><img alt="Logo" src="newlogotransparent.png"/></a>
+<div class="logo-caption">
+<strong>The Solidarity Exchange</strong><br/>
+<span>We extend solidarity without conditions.</span>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="featured-container" style="text-align: left;">
+<div id="profile-container"></div>
+</div>
+</div>
+<script>
+  
+  function escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+    
   async function loadProfile() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -52,6 +60,25 @@
 
     if (prisoner.mailing_address) {
       html += `<p><strong>Mailing Address:</strong><br><span style="white-space: pre-line;">${prisoner.mailing_address}</span></p><br>`;
+    // 👉 NEW: Wishlists, right under mailing address
+    if (Array.isArray(prisoner.wishlists) && prisoner.wishlists.length > 0) {
+      const links = prisoner.wishlists
+        .filter(w => w && (w.url || w.retailer))
+        .map(w => {
+          const label = w.retailer
+            ? escapeHTML(w.retailer)
+            : (() => {
+                try { return new URL(w.url).hostname.replace(/^www\./, ""); }
+                catch { return "Wishlist"; }
+              })();
+          const url = w.url ? escapeHTML(w.url) : "#";
+          return `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+        });
+
+      const nameSafe = escapeHTML(prisoner.name || "This prisoner");
+      html += `<p>${nameSafe} has a wishlist with ${links.join(" & ")}.</p>`;
+    }
+    
     }
 
     if (prisoner.bio) {
@@ -91,24 +118,21 @@
 
   loadProfile();
   </script>
-
-    <div class="grid-container">
-    <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
-    <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
-    <div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
-    <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
-  </div>
-
-            <div class="social-links">
-            <a href="https://gab.com/SolidarityExchange" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png" alt="Gab">
-            </a>
-            <a href="https://x.com/SE_NoConditions" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X/Twitter">
-            </a>
-            <a href="https://t.me/SolidarityExchange" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" alt="Telegram">
-        </div>
-
+<div class="grid-container">
+<div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
+<div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
+<div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
+<div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
+</div>
+<div class="social-links">
+<a href="https://gab.com/SolidarityExchange" target="_blank">
+<img alt="Gab" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png"/>
+</a>
+<a href="https://x.com/SE_NoConditions" target="_blank">
+<img alt="X/Twitter" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"/>
+</a>
+<a href="https://t.me/SolidarityExchange" target="_blank">
+<img alt="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png"/>
+</a></div>
 </body>
 </html>
