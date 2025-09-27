@@ -134,6 +134,10 @@
       {
         "retailer": "Amazon",
         "url": "https://www.amazon.com/hz/wishlist/example-generic"
+      },
+      {
+        "retailer": "Walmart",
+        "url": "https://www.walmart.com/registry/example-sarah2"
       }
     ]
   },
