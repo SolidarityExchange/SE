@@ -60,9 +60,9 @@
     if (prisoner.mailing_address) {
       html += `<p><strong>Mailing Address:</strong><br><span style="white-space: pre-line;">${prisoner.mailing_address}</span></p><br>`;
     
-    // 👉 UPDATED: Wishlists now link to wishlist_page_theme.html with prisoner ID
+    // 👉 UPDATED: Wishlists now link to wishlists.html with prisoner ID
     if (Array.isArray(prisoner.wishlists) && prisoner.wishlists.length > 0) {
-      html += `<p><a href="wishlist_page_theme.html?id=${encodeURIComponent(prisoner.id)}" class="profile-link">View ${prisoner.name || "this prisoner"}'s wishlists</a></p><br>`;
+      html += `<p><a href="wishlists.html?id=${encodeURIComponent(prisoner.id)}" class="profile-link">View ${prisoner.name || "this prisoner"}'s wishlists</a></p><br>`;
     }
     
     }
