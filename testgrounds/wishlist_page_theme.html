@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wishlists</title>
+  <style>
+    /* Minimal, theme-friendly tweaks: rely on site styles for colors/typography */
+    .content{ max-width: 900px; margin: 0 auto; padding: 20px 16px 48px; }
+    .page-title{ margin: 0 0 4px; font-size: clamp(22px, 3.2vw, 32px); }
+    .subtle{ opacity: .75; }
+    .section{ margin-top: 18px; }
+    .notice, .warning{
+      border: 1px solid currentColor;
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .notice{ opacity:.95 }
+    .warning{ border-style: dashed; }
+    .lists{ display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 12px; }
+    .list-item{
+      border:1px solid currentColor; border-radius: 10px; padding: 12px 12px; opacity:.95;
+    }
+    .list-item strong{ display:block; margin-bottom:6px; }
+    .btn-row{ margin-top: 18px; display:flex; gap:12px; flex-wrap: wrap; }
+    .btn-link{ text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1 class="page-title" id="title">Wishlists</h1>
+    <p class="subtle" id="subtitle">Loading…</p>
+
+    <div class="section notice">
+      <h2>How to use these lists</h2>
+      <p>Pick a retailer below and purchase items directly from the wishlist. If checkout asks for an address, it should auto‑fill. Keep your receipt just in case.</p>
+      <p class="subtle">Tip: Smaller, practical items tend to be approved faster.</p>
+    </div>
+
+    <div class="section warning">
+      <h2>Heads up about rejections</h2>
+      <p>Facilities sometimes reject care packages (rules, vendor limits, or content). This is especially common with “bad‑boy” books or anything the mailroom considers edgy. Check the facility’s rules before buying.</p>
+      <ul>
+        <li>Prefer new items shipped by the retailer (avoid third‑party sellers where possible).</li>
+        <li>No hardcovers where prohibited; avoid spiral bindings if restricted.</li>
+        <li>Avoid explicit content or how‑to violence/exploits.</li>
+      </ul>
+      <p class="subtle">If something is rejected, request a refund from the retailer and tell us so we can adjust the list.</p>
+    </div>
+
+    <div class="section">
+      <h2>Links to wishlists</h2>
+      <div id="listContainer" class="lists">
+        <div class="list-item"><em>Loading…</em></div>
+      </div>
+    </div>
+
+    <div class="btn-row section">
+      <a class="btn-link" href="javascript:history.back()">← Back</a>
+      <a class="btn-link" id="profileLink" href="#">View full profile</a>
+    </div>
+  </div>
+
+  <script>
+    function escapeHTML(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+    function getParam(name){ const url=new URL(window.location.href); return url.searchParams.get(name); }
+    async function loadJSONWithFallback(){
+      try{ const r1=await fetch("prisoners.json",{cache:"no-store"}); if(r1.ok) return r1.json(); throw 0;}
+      catch(e){ const r2=await fetch("prisoners_updated.json",{cache:"no-store"}); if(r2.ok) return r2.json(); throw 0;}
+    }
+    function normalizeWishlists(w){ if(!w) return []; if(Array.isArray(w)) return w; if(typeof w==="string") return [{url:w}]; return [w]; }
+    function retailerFromURL(url){
+      try{ const h=new URL(url).hostname.replace(/^www\./,"");
+        if(h.includes("amazon")) return "Amazon";
+        if(h.includes("walmart")) return "Walmart";
+        if(h.includes("barnesandnoble")) return "Barnes & Noble";
+        if(h.includes("target")) return "Target";
+        return h;
+      }catch{return "Wishlist";}
+    }
+    async function init(){
+      const id=getParam("id");
+      const data=await loadJSONWithFallback();
+      const prisoner=(data||[]).find(p=>String(p.id)===String(id));
+
+      const title=document.getElementById("title");
+      const subtitle=document.getElementById("subtitle");
+      const listContainer=document.getElementById("listContainer");
+      const profileLink=document.getElementById("profileLink");
+
+      if(!prisoner){
+        title.textContent="Prisoner not found";
+        subtitle.innerHTML='Pass a valid id using <code>?id=123</code> in the URL.';
+        listContainer.innerHTML='<div class="list-item"><em>No data.</em></div>';
+        profileLink.style.display="none"; return;
+      }
+
+      document.title=(prisoner.name?prisoner.name+" — Wishlists":"Prisoner Wishlist");
+      title.textContent=prisoner.name||"Prisoner";
+      subtitle.textContent=prisoner.state?("ID #"+prisoner.id+" · "+prisoner.state):("ID #"+prisoner.id);
+      profileLink.href="dynamicbio.html?id="+encodeURIComponent(prisoner.id);
+
+      const wish=normalizeWishlists(prisoner.wishlists);
+      if(!wish.length){
+        listContainer.innerHTML='<div class="list-item"><strong>No wishlists on file</strong><p class="subtle">Check back later or consider sending a letter first to ask what they need.</p></div>';
+        return;
+      }
+
+      listContainer.innerHTML="";
+      wish.forEach(w=>{
+        const url=w.url||"#"; const retailer=w.retailer||retailerFromURL(url);
+        const el=document.createElement("div"); el.className="list-item";
+        el.innerHTML='<strong>'+escapeHTML(retailer)+'</strong><a href="'+escapeHTML(url)+'" target="_blank" rel="noopener">Open wishlist</a>';
+        listContainer.appendChild(el);
+      });
+    }
+    init().catch(err=>{
+      console.error(err);
+      const title=document.getElementById("title");
+      const subtitle=document.getElementById("subtitle");
+      const listContainer=document.getElementById("listContainer");
+      title.textContent="Error loading wishlists";
+      subtitle.textContent="There was a problem loading data.";
+      listContainer.innerHTML='<div class="list-item"><em>Try refreshing the page.</em></div>';
+    });
+  </script>
+</body>
+</html>
