@@ -92,7 +92,9 @@
 
     // 👉 WISHLIST SECTION
     if (Array.isArray(prisoner.wishlists) && prisoner.wishlists.length > 0) {
-      html += `<br><h3>Wishlist Items:</h3><ul>`;
+      html += `<br><h3>Wishlist Items:</h3>`;
+      html += `<p><em>You can contribute items through our <a href="wishlistinstructions.html">donation system</a> for anonymous or pseudonymous giving, or purchase items directly through the retailer links provided, but be sure to follow <a href="wishlistinstructions.html">these guidelines</a>.</em></p>`;
+      html += `<ul>`;
       
       // Generate item codes (a, b, c, etc.)
       const itemCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
@@ -105,8 +107,7 @@
         html += `<li><a href="${item.url}" target="_blank">${itemName}</a> - approximately ${itemCost} with shipping - Item Code: ${itemCode}</li>`;
       });
       
-      html += `</ul>`;
-      html += `<p><em>You can contribute items through our <a href="wishlistinstructions.html">donation system</a> for anonymous or pseudonymous giving, or purchase items directly through the retailer links provided, but be sure to follow <a href="wishlistinstructions.html">these guidelines</a>.</em></p><br>`;
+      html += `</ul><br>`;
     }
 
     // Add return link at the bottom (inside white box)
