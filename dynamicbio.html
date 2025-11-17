@@ -26,6 +26,16 @@
   </div>
 
    <script>
+  
+  function escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+    
   async function loadProfile() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -83,6 +93,25 @@
       html += `<p><a href="${prisoner.profile_link}">More info</a></p>`;
     }
 
+    // 👉 WISHLIST SECTION
+    if (Array.isArray(prisoner.wishlists) && prisoner.wishlists.length > 0) {
+      html += `<br><h3>Wishlist Items:</h3><ul>`;
+      
+      // Generate item codes (a, b, c, etc.)
+      const itemCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+      
+      prisoner.wishlists.forEach((item, index) => {
+        const itemCode = itemCodes[index] || String.fromCharCode(97 + index);
+        const itemName = item.name || `Item from ${item.retailer}`;
+        const itemCost = item.cost || "$XX.XX";
+        
+        html += `<li><a href="${item.url}" target="_blank">${itemName}</a> - approximately ${itemCost} with shipping - Item Code: ${itemCode}</li>`;
+      });
+      
+      html += `</ul>`;
+      html += `<p><em>You can contribute items through our <a href="wishlistinstructions.html">donation system</a> for anonymous or pseudonymous giving, or purchase items directly through the retailer links provided, but be sure to follow <a href="wishlistinstructions.html">these guidelines</a>.</em></p><br>`;
+    }
+
     // Add return link at the bottom (inside white box)
     html += `<p><a href="registry.html">Return to registry</a></p>`;
 
@@ -90,8 +119,8 @@
   }
 
   loadProfile();
-  </script>
-
+</script>
+  
     <div class="grid-container">
     <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
     <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
