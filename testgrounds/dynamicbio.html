@@ -77,7 +77,11 @@
     const isFederal = /FEDERAL CORRECTIONAL INSTITUTION|U\.S\. PENITENTIARY/.test(prisoner.mailing_address);
 
     if (isFederal) {
-      html += `<br><p style="color: green;"><strong>FEDERAL DONATION INSTRUCTIONS GO HERE</strong></p>`;
+      html += `<br><p>${prisoner.name || "This prisoner"} is able to receive commissary <i>via</i> the following methods:</p>`;
+      html += `<br><ul>`;
+      html += `<li><i>The Solidarity Exchange via</i> <a href="https://www.bop.gov/inmates/communications.jsp#money" target="_blank">GiveSendGo</a> - ${prisoner.name || "PrisonerName"}$$$</li>`;
+      html += `<li>MoneyGram, Western Union and money order <i>via</i> US Mail.</li>`;
+      html += `</ul>`;
     } else if (prisoner.facility_url) {
       html += `<br><p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
     }
