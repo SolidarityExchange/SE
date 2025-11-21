@@ -98,7 +98,7 @@
 
     // COMMISSARY SECTION - FOR ALL PRISONERS
     html += `<br><h3>Commissary Support:</h3>`;
-    html += `<p>${prisoner.name || "This prisoner"} is able to receive commissary support through The Solidarity Exchange.</p>`;
+    html += `<p>${prisoner.name || "This prisoner"} is able to receive commissary support through the following methods:</p>`;
     html += `<br><ul>`;
     html += `<li><i>The Solidarity Exchange via</i> <a href="https://www.givesendgo.com/oneforsolidarity" target="_blank">GiveSendGo</a> - Commissary Code: ${prisoner.name ? prisoner.name.replace(/\s+/g, '').toUpperCase() : "PRISONER"}$$$</li>`;
     
