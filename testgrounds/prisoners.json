@@ -6,7 +6,21 @@
   "profile_link": "#",
   "image_url": "https://solidarityexchange.github.io/SE/pictures/PENNY_AIMENN.PNG",
   "state": "WV",
-  "mailing_address": "AIMENN PENNY, 51942-510<br>FCI McDowell<br>FEDERAL CORRECTIONAL INSTITUTION<br>P.O. BOX 1009<br>WELCH, WV 24801"
+  "mailing_address": "AIMENN PENNY, 51942-510<br>FCI McDowell<br>FEDERAL CORRECTIONAL INSTITUTION<br>P.O. BOX 1009<br>WELCH, WV 24801",
+  "wishlists": [
+      {
+        "retailer": "Amazon",
+        "url": "https://www.amazon.com/hz/wishlist/example-sarah1"
+      },
+      {
+        "retailer": "Walmart",
+        "url": "https://www.walmart.com/registry/example-sarah2"
+      },
+      {
+        "retailer": "Barnes & Noble",
+        "url": "https://www.barnesandnoble.com/account/wishlist/example-sarah3"
+      }
+    ]          
 },
   {
     "id": "14",
