@@ -99,19 +99,9 @@
     "facility_url": "http://www.dc.state.fl.us/offenderSearch/detail.aspx?Page=Detail&DCNumber=292124&TypeSearch=AI",
     "wishlists": [
       {
-        "name": "Art Therapy Supplies",
-        "url": "https://www.amazon.com/hz/wishlist/example-sarah1",
-        "cost": "$18.99"
-      },
-      {
-        "name": "Health & Nutrition Books",
-        "url": "https://www.walmart.com/registry/example-sarah2",
-        "cost": "$27.25"
-      },
-      {
-        "name": "Stationery & Writing Set",
-        "url": "https://www.barnesandnoble.com/account/wishlist/example-sarah3",
-        "cost": "$12.50"
+        "name": "null",
+        "url": "#",
+        "cost": "$null"
       }
     ]    
   }
