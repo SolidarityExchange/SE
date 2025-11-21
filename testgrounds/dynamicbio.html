@@ -108,12 +108,12 @@
       html += `<li><a href="https://www.bop.gov/inmates/communications.jsp#money">MoneyGram, Western Union and money order</a> (Federal facilities)</li>`;
     }
     
-    html += `</ul>`;
-    
-    // Add facility-specific info for state prisoners
+    // Add official commissary option for state prisoners
     if (!isFederal && prisoner.facility_url) {
-      html += `<br><p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information about their facility <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
+      html += `<li><strong>Official Commissary Contribution:</strong> This person is held in a state/local facility. <a href="${prisoner.facility_url}" target="_blank">Look up their facility's specific contribution methods here</a>.</li>`;
     }
+    
+    html += `</ul>`;
 
     if (prisoner.moneyGram) {
       html += `<p><strong>MoneyGram Info:</strong> ${prisoner.moneyGram}</p>`;
