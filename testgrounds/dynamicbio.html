@@ -96,23 +96,27 @@
       html += `</ul><br>`;
     }
 
-    // Check if federal (COMMISSARY SECTION)
+    // COMMISSARY SECTION - FOR ALL PRISONERS
+    html += `<br><h3>Commissary Support:</h3>`;
+    html += `<p>${prisoner.name || "This prisoner"} is able to receive commissary support through The Solidarity Exchange.</p>`;
+    html += `<br><ul>`;
+    html += `<li><i>The Solidarity Exchange via</i> <a href="https://www.givesendgo.com/oneforsolidarity" target="_blank">GiveSendGo</a> - Commissary Code: ${prisoner.name ? prisoner.name.replace(/\s+/g, '').toUpperCase() : "PRISONER"}$$$</li>`;
+    
+    // Federal prisoners get additional options
     const isFederal = /FEDERAL CORRECTIONAL INSTITUTION|U\.S\. PENITENTIARY/.test(prisoner.mailing_address);
-
     if (isFederal) {
-      html += `<br><h3>Commissary Support:</h3>`;
-      html += `<p>${prisoner.name || "This prisoner"} is able to receive commissary <i>via</i> the following methods:</p>`;
-      html += `<br><ul>`;
-      html += `<li><i>The Solidarity Exchange via</i> <a href="https://www.givesendgo.com/oneforsolidarity" target="_blank">GiveSendGo</a> - ${prisoner.name || "PrisonerName"}$$$</li>`;
-      html += `<li><a href="https://www.bop.gov/inmates/communications.jsp#money">MoneyGram, Western Union and money order.</a></li>`;
-      html += `</ul>`;
-    } else if (prisoner.facility_url) {
-      html += `<br><h3>Commissary Support:</h3>`;
-      html += `<p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
+      html += `<li><a href="https://www.bop.gov/inmates/communications.jsp#money">MoneyGram, Western Union and money order</a> (Federal facilities)</li>`;
+    }
+    
+    html += `</ul>`;
+    
+    // Add facility-specific info for state prisoners
+    if (!isFederal && prisoner.facility_url) {
+      html += `<br><p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information about their facility <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
     }
 
     if (prisoner.moneyGram) {
-      html += `<p><strong>MoneyGram:</strong> ${prisoner.moneyGram}</p>`;
+      html += `<p><strong>MoneyGram Info:</strong> ${prisoner.moneyGram}</p>`;
     }
 
     if (prisoner.profile_link && prisoner.profile_link !== "#") {
