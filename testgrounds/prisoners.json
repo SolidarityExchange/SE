@@ -1,5 +1,4 @@
-[
- /* {
+/* {
   "id": "03",
   "name": "Nobody",
   "bio": "Whistleblower detained for <a href='https://www.google.com'>leaking</a> classified <a href='https://www.google.com'>documents.</a>",
@@ -14,7 +13,8 @@
       "name": "Paperback Books Collection",
       "cost": "$25.00"
     }, */
-    {
+[
+     {
       "retailer": "Barnes & Noble",
       "url": "https://www.barnesandnoble.com/w/example2",
       "name": "Writing Journal Set",
