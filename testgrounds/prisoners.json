@@ -9,19 +9,14 @@
     "mailing_address": "AIMENN PENNY, 51942-510<br>FCI McDowell<br>FEDERAL CORRECTIONAL INSTITUTION<br>P.O. BOX 1009<br>WELCH, WV 24801",
     "wishlists": [
       {
-        "name": "Mein Kampf by Adolf Hitler",
-        "url": "https://www.amazon.com/hz/wishlist/example-penny1",
-        "cost": "$15.99"
+        "name": "On Heroes, Hero-Worship, and the Heroic in History - The Annotated Carlyle - by Thomas Carlyle",
+        "url": "https://www.amazon.com/Heroes-Hero-Worship-Heroic-History-Annotated/dp/1923104314/",
+        "cost": "$18.00"
       },
       {
-        "name": "Strength Training Guide",
-        "url": "https://www.walmart.com/registry/example-penny2",
-        "cost": "$24.50"
-      },
-      {
-        "name": "Germanic Mythology Collection",
-        "url": "https://www.barnesandnoble.com/account/wishlist/example-penny3",
-        "cost": "$32.75"
+        "name": "Carl Jung Book Placeholder",
+        "url": "#",
+        "cost": "$null"
       }
     ]          
   },
