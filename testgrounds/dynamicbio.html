@@ -79,11 +79,12 @@
       html += `<p><em>You can contribute items and commissary through our <a href="wishlistinstructions.html">donation system</a> for anonymous or pseudonymous giving, or purchase items/commissary directly through the links provided, but be sure to follow <a href="wishlistinstructions.html">these guidelines</a>.</em></p><br>`;
       html += `<ul>`;
       
-      // Generate item codes (a, b, c, etc.)
+      // Generate automatic item codes (a, b, c, etc.) as fallback
       const itemCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
       
       prisoner.wishlists.forEach((item, index) => {
-        const itemCode = itemCodes[index] || String.fromCharCode(97 + index);
+        // Use custom code if provided, otherwise generate automatically
+        const itemCode = item.code || itemCodes[index] || String.fromCharCode(97 + index);
         const itemName = item.name || "Wishlist Item";
         const itemCost = item.cost || "$XX.XX";
         
