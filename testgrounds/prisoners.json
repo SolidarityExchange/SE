@@ -32,19 +32,14 @@
     "mailing_address": "SARAH BETH CLENDANIEL, #42941-510\nFCI Tallahassee\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 5000\nTALLAHASSEE, FL   32314",
     "wishlists": [
       {
-        "name": "Art Therapy Supplies",
-        "url": "https://www.amazon.com/hz/wishlist/example-sarah1",
-        "cost": "$18.99"
+        "name": "Defiance: The Prison Memoirs of Savitri Devi",
+        "url": "https://www.barnesandnoble.com/w/defiance-savitri-devi/1117377079",
+        "cost": "$30.00"
       },
       {
-        "name": "Health & Nutrition Books",
-        "url": "https://www.walmart.com/registry/example-sarah2",
+        "name": "A Warning to the Hindus - by Savitri Devi",
+        "url": "https://www.amazon.com/Warning-Hindus-Savitri-Devi/dp/8185002401",
         "cost": "$27.25"
-      },
-      {
-        "name": "Stationery & Writing Set",
-        "url": "https://www.barnesandnoble.com/account/wishlist/example-sarah3",
-        "cost": "$12.50"
       }
     ]
   },
