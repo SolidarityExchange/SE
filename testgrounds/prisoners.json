@@ -71,14 +71,22 @@
     "mailing_address": "Joshua Michael Steever #75745-067\nFCI Otisville\nFEDERAL CORRECTIONAL INSTITUTION\nP.O. BOX 1000\nOTISVILLE, NY   10963",
     "wishlists": [
       {
-        "name": "Chess Strategy Books",
-        "url": "https://www.amazon.com/hz/wishlist/example-joshua1",
-        "cost": "$28.99"
+        "name": "Havamal for Heathens - by Woden's Folk Kindred",
+        "url": "https://www.amazon.com/Havamal-Heathens-Wodens-Folk-Kindred/dp/1726271439/",
+        "cost": "$12.95",
+        "code": "JSTEEVER1"
       },
       {
-        "name": "Workout Equipment",
-        "url": "https://www.amazon.com/hz/wishlist/example-joshua2", 
-        "cost": "$35.75"
+        "name": "The Call of our Ancient Nordic Religion - by Rud Mills",
+        "url": "https://www.amazon.com/Call-our-Ancient-Nordic-Religion/dp/1471696286/", 
+        "cost": "$10",
+        "code": "JSTEEVER2"
+      },
+      {
+        "name": "Revolver magazine - 1 year subscription (4 issues)",
+        "url": "https://ezsubscription.com/rvl/giveagift", 
+        "cost": "$49.99",
+        "code": "JSTEEVER3"
       }
     ]
   },
