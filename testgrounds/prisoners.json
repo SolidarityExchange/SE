@@ -34,12 +34,14 @@
       {
         "name": "Defiance: The Prison Memoirs of Savitri Devi",
         "url": "https://www.barnesandnoble.com/w/defiance-savitri-devi/1117377079",
-        "cost": "$30.00"
+        "cost": "$30.00",
+        "code": "SCLENDANIEL1"
       },
       {
         "name": "A Warning to the Hindus - by Savitri Devi",
         "url": "https://www.amazon.com/Warning-Hindus-Savitri-Devi/dp/8185002401",
-        "cost": "$27.25"
+        "cost": "$27.25",
+        "code": "SCLENDANIEL2"
       }
     ]
   },
