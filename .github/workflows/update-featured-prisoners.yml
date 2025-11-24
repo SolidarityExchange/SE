@@ -2,7 +2,7 @@ name: Update Featured Prisoners Weekly
 
 on:
   schedule:
-    - cron: '0 1 * * 1'  # Runs every Monday at 1:00 UTC (9:00 PM EDT Sunday)
+    - cron: '0 2 * * 1'  # Runs every Monday at 2:00 UTC (10:00 PM EDT Sunday)
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
