@@ -2,7 +2,7 @@ name: Update Featured Prisoners Weekly
 
 on:
   schedule:
-    - cron: '0 0 * * 1'  # Runs every Monday at midnight UTC
+    - cron: '0 1 * * 1'  # Runs every Monday at 1:00 UTC (9:00 PM EDT Sunday)
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Select Random Prisoners
         run: |
-          jq -c 'to_entries | map(.value) | .[]' prisoners.json | shuf -n 3 | jq -s '.' > featured_prisoners.json
+          jq -c 'to_entries | map(.value) | .[]' prisoners.json | shuf -n 1 | jq -s '.' > featured_prisoners.json
 
       - name: Force Commit and Push Changes
         env:
