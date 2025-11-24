@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prisoner Registry --- The Solidarity Exchange</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prisoner Registry --- The Solidarity Exchange</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <div class="topbar-container">
-    <div class="logo">
-      <a href="index.html"><img src="newlogotransparent.png" alt="Logo"></a>
-      <div class="logo-caption">
-        <strong>The Solidarity Exchange</strong><br>
-        <span>We extend solidarity without conditions.</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="content">
-    <div class="featured-container" style="text-align: left;">
-      <div id="profile-container"></div>
-    </div>
-  </div>
-
-   <script>
+<div class="topbar-container">
+<div class="logo">
+<a href="index.html"><img alt="Logo" src="newlogotransparent.png"/></a>
+<div class="logo-caption">
+<strong>The Solidarity Exchange</strong><br/>
+<span>We extend solidarity without conditions.</span>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="featured-container" style="text-align: left;">
+<div id="profile-container"></div>
+</div>
+</div>
+<script>
   
   function escapeHTML(str) {
     return String(str)
@@ -76,68 +73,80 @@
       html += `<br><p><strong>State:</strong> ${prisoner.state}</p>`;
     }
 
-    // Check if federal
-    const isFederal = /FEDERAL CORRECTIONAL INSTITUTION|U\.S\. PENITENTIARY/.test(prisoner.mailing_address);
-
-    if (isFederal) {
-      html += `<br><p style="color: green;"><strong>FEDERAL DONATION INSTRUCTIONS GO HERE</strong></p>`;
-    } else if (prisoner.facility_url) {
-      html += `<br><p style="color: navy;"><strong>This person is currently held in a state, county, local, or specialized federal correctional facility.</strong> You can find more information <a href="${prisoner.facility_url}" target="_blank">here</a>.</p>`;
+    // 👉 WISHLIST SECTION
+    if (Array.isArray(prisoner.wishlists) && prisoner.wishlists.length > 0) {
+      html += `<br><h3>Wishlist Items:</h3><br>`;
+      html += `<p><em>You can contribute items and commissary through our <a href="wishlistinstructions.html">donation system</a> for anonymous or pseudonymous giving, or purchase items/commissary directly through the links provided, but be sure to follow <a href="wishlistinstructions.html">these guidelines</a>.</em></p><br>`;
+      html += `<ul>`;
+      
+      // Generate automatic item codes (a, b, c, etc.) as fallback
+      const itemCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+      
+      prisoner.wishlists.forEach((item, index) => {
+        // Use custom code if provided, otherwise generate automatically
+        const itemCode = item.code || itemCodes[index] || String.fromCharCode(97 + index);
+        const itemName = item.name || "Wishlist Item";
+        const itemCost = item.cost || "$XX.XX";
+        
+        html += `<li>
+          <a href="${item.url}" target="_blank">${itemName}</a> - approximately ${itemCost} plus shipping
+          <div style="margin-left: 20px; font-style: italic;">Item Code: ${itemCode}</div>
+        </li>`;
+      });
+      
+      html += `</ul><br>`;
     }
 
+    // COMMISSARY SECTION - FOR ALL PRISONERS
+    html += `<br><h3>Commissary Support:</h3>`;
+    html += `<p>${prisoner.name || "This prisoner"} is able to receive commissary support through the following methods:</p>`;
+    html += `<br><ul>`;
+    html += `<li><i>The Solidarity Exchange via</i> <a href="https://www.givesendgo.com/oneforsolidarity" target="_blank">GiveSendGo</a> - Commissary Code: ${prisoner.name ? prisoner.name.replace(/\s+/g, '').toUpperCase() : "PRISONER"}$$$</li>`;
+    
+    // Federal prisoners get additional options
+    const isFederal = /FEDERAL CORRECTIONAL INSTITUTION|U\.S\. PENITENTIARY/.test(prisoner.mailing_address);
+    if (isFederal) {
+      html += `<li><a href="https://www.bop.gov/inmates/communications.jsp#money">MoneyGram, Western Union and money order</a> (Federal facilities)</li>`;
+    }
+    
+    // Add official commissary option for state prisoners
+    if (!isFederal && prisoner.facility_url) {
+      html += `<li><strong>Official Commissary Contribution:</strong> This person is held in a state/local facility. <a href="${prisoner.facility_url}" target="_blank">Look up their facility's specific contribution methods here</a>.</li>`;
+    }
+    
+    html += `</ul>`;
+
     if (prisoner.moneyGram) {
-      html += `<p><strong>MoneyGram:</strong> ${prisoner.moneyGram}</p>`;
+      html += `<p><strong>MoneyGram Info:</strong> ${prisoner.moneyGram}</p>`;
     }
 
     if (prisoner.profile_link && prisoner.profile_link !== "#") {
       html += `<p><a href="${prisoner.profile_link}">More info</a></p>`;
     }
 
-    // 👉 WISHLIST SECTION
-    if (Array.isArray(prisoner.wishlists) && prisoner.wishlists.length > 0) {
-      html += `<br><h3>Wishlist Items:</h3><ul>`;
-      
-      // Generate item codes (a, b, c, etc.)
-      const itemCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
-      
-      prisoner.wishlists.forEach((item, index) => {
-        const itemCode = itemCodes[index] || String.fromCharCode(97 + index);
-        const itemName = item.name || `Item from ${item.retailer}`;
-        const itemCost = item.cost || "$XX.XX";
-        
-        html += `<li><a href="${item.url}" target="_blank">${itemName}</a> - approximately ${itemCost} with shipping - Item Code: ${itemCode}</li>`;
-      });
-      
-      html += `</ul>`;
-      html += `<p><em>You can contribute items through our <a href="wishlistinstructions.html">donation system</a> for anonymous or pseudonymous giving, or purchase items directly through the links provided, but be sure to follow <a href="wishlistinstructions.html">these guidelines</a>.</em></p><br>`;
-    }
-
     // Add return link at the bottom (inside white box)
-    html += `<p><a href="registry.html">Return to registry</a></p>`;
+    html += `<br><p><a href="registry.html">Return to registry</a></p>`;
 
     container.innerHTML = html;
   }
 
   loadProfile();
 </script>
-  
-    <div class="grid-container">
-    <div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
-    <div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
-    <div class="grid-item"><a href="#">THE SOLIDARITY DISPATCH</a></div>
-    <div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
-  </div>
-
-            <div class="social-links">
-            <a href="https://gab.com/SolidarityExchange" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png" alt="Gab">
-            </a>
-            <a href="https://x.com/SE_NoConditions" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X/Twitter">
-            </a>
-            <a href="https://t.me/SolidarityExchange" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" alt="Telegram">
-        </div>
-
+<div class="grid-container">
+<div class="grid-item"><a href="registry.html">PRISONER REGISTRY</a></div>
+<div class="grid-item"><a href="support.html">SUPPORTING PRISONERS</a></div>
+<div class="grid-item"><a href="dispatch.html">THE SOLIDARITY DISPATCH</a></div>
+<div class="grid-item"><a href="aboutus.html">ABOUT US</a></div>
+</div>
+<div class="social-links">
+<a href="https://gab.com/SolidarityExchange" target="_blank">
+<img alt="Gab" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gab_text_logo.svg/1920px-Gab_text_logo.svg.png"/>
+</a>
+<a href="https://x.com/SE_NoConditions" target="_blank">
+<img alt="X/Twitter" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"/>
+</a>
+<a href="https://t.me/SolidarityExchange" target="_blank">
+<img alt="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png"/>
+</a></div>
 </body>
 </html>
