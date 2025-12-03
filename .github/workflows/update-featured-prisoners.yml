@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      workflows: write  # Added this line
 
     steps:
       - name: Checkout Repository
@@ -43,7 +42,7 @@ jobs:
           # Clean up
           rm selected_prisoner.json
 
-      - name: Force Commit and Push Changes
+      - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -53,7 +52,7 @@ jobs:
           # Add a timestamp to force Git to detect a change
           date > timestamp.txt
           
-          # Only commit the data files, NOT workflow files
+          # Only commit the data files
           git add featured_prisoners.json timestamp.txt
           git commit -m "Updated weekly featured prisoners with forced change" || exit 0
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main --force
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
