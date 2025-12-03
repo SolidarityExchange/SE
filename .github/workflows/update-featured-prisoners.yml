@@ -22,20 +22,31 @@ jobs:
 
       - name: Select Random Prisoners
         run: |
-          # Use timestamp for true randomness (changes every second)
+          # Debug: Show where we are
+          echo "Current directory: $(pwd)"
+          echo "Files in root:"
+          ls -la
+          
+          # Use timestamp for randomness
           random_seed=$(date +%s)
           
           # Get total number of prisoners
           count=$(jq 'length' prisoners.json)
+          echo "Prisoner count: $count"
           
-          # Calculate random index using timestamp
+          # Calculate random index
           index=$(( random_seed % count ))
+          echo "Selected index: $index"
           
           # Select that prisoner
           jq --argjson idx "$index" '.[$idx]' prisoners.json > selected_prisoner.json
           
           # Wrap in array for consistent format
           jq -s '.' selected_prisoner.json > featured_prisoners.json
+          
+          # Show what we selected
+          echo "Selected prisoner:"
+          cat featured_prisoners.json
           
           # Clean up
           rm selected_prisoner.json
