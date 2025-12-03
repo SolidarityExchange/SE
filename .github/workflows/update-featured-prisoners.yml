@@ -22,7 +22,23 @@ jobs:
 
       - name: Select Random Prisoners
         run: |
-          jq -c 'to_entries | map(.value) | .[]' prisoners.json | shuf -n 1 | jq -s '.' > featured_prisoners.json
+          # Use timestamp for true randomness (changes every second)
+          random_seed=$(date +%s)
+          
+          # Get total number of prisoners
+          count=$(jq 'length' prisoners.json)
+          
+          # Calculate random index using timestamp
+          index=$(( random_seed % count ))
+          
+          # Select that prisoner
+          jq --argjson idx "$index" '.[$idx]' prisoners.json > selected_prisoner.json
+          
+          # Wrap in array for consistent format
+          jq -s '.' selected_prisoner.json > featured_prisoners.json
+          
+          # Clean up
+          rm selected_prisoner.json
 
       - name: Force Commit and Push Changes
         env:
