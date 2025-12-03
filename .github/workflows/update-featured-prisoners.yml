@@ -9,7 +9,8 @@ jobs:
   update_prisoners:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Grants permission to push changes
+      contents: write
+      workflows: write  # Added this line
 
     steps:
       - name: Checkout Repository
@@ -22,11 +23,6 @@ jobs:
 
       - name: Select Random Prisoners
         run: |
-          # Debug: Show where we are
-          echo "Current directory: $(pwd)"
-          echo "Files in root:"
-          ls -la
-          
           # Use timestamp for randomness
           random_seed=$(date +%s)
           
@@ -44,10 +40,6 @@ jobs:
           # Wrap in array for consistent format
           jq -s '.' selected_prisoner.json > featured_prisoners.json
           
-          # Show what we selected
-          echo "Selected prisoner:"
-          cat featured_prisoners.json
-          
           # Clean up
           rm selected_prisoner.json
 
@@ -61,6 +53,7 @@ jobs:
           # Add a timestamp to force Git to detect a change
           date > timestamp.txt
           
+          # Only commit the data files, NOT workflow files
           git add featured_prisoners.json timestamp.txt
           git commit -m "Updated weekly featured prisoners with forced change" || exit 0
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main --force
